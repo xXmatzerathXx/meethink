@@ -12,5 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    if (!Auth::check()){
+        return view('start');
+    }
+    else{
+        return view('home');
+    }
 });
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/start', 'StartController@index')->name('start');
+Route::get('/steps', 'StepsController@index')->name('steps');
