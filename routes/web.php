@@ -20,10 +20,12 @@ Route::get('/', function () {
     }
 });
 
-
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/start', 'StartController@index')->name('start');
-Route::get('/steps', 'StepsController@index')->name('steps');
+Route::get('/start', 'StartController@start')->name('start');
+Route::get('/steps', 'StepsController@steps')->name('steps');
+Route::post('/user', 'UserController@user')->name('user');
+Route::post('/proyect', 'ProyectController@proyect')->name('proyect');
+Route::post('/list', 'ListController@list')->name('list');
+Route::post('/message', 'MessageController@message')->name('message');

@@ -2,7 +2,7 @@
 
 @section('content')
 
-<p>Hola</p>
+<p class="wow fadeIn">Hola</p>
 
 
 @endsection

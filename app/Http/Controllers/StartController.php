@@ -13,7 +13,7 @@ class StartController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('auth');
     }
 
     /**
@@ -21,7 +21,7 @@ class StartController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function start()
     {
         return view('start');
     }

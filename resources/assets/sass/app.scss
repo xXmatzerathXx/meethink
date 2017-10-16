@@ -1,9 +1,94 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900');
 
 // Variables
 @import "variables";
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Style
+@import "variables";
+
+//
+@font-face {
+  font-family: dt;
+  src: url("/fonts/dolce/dolcethin.ttf");
+}
+@font-face {
+  font-family: dr;
+  src: url("/fonts/dolce/dolceregular.ttf");
+}
+*{
+  font-family: Roboto;
+  font-weight: 900;
+  color: white;
+}
+body{
+  background-image: url(/img/fondo.png);
+}
+
+h2{
+  color: white;
+  font-size: 70px;
+  padding-bottom: 10px;
+  display: block;
+  font-size: 900;
+  position: relative;
+  &:after{
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    content: "";
+    background-color: white;
+    bottom: 0;
+    left: 0;
+  }
+}
+//Start
+nav.navbar-default{
+  background-color: $transparent;
+  ul{
+    list-style: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    a{
+      display: inline-block;
+      width: 25%;
+      text-align: center;
+      li{
+        font-family: dr;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.panel{
+  background-color: $transparent;
+}
+.btn-primary {
+  padding-top: 7px;
+  border: 1px solid white;
+  color: white;
+  width: 140px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: $transparent;
+  transition: all 0.5s;
+  font-family: dt;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: blue;
+    background-color: white;
+    border-color: blue;
+  }
+}
