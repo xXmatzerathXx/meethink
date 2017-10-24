@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="equipos" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 400" style="enable-background:new 0 0 600 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<circle class="st0" cx="301" cy="110.7" r="78.7"/>
+	<path class="st0" d="M407.4,365H197.1c-12.2,0-22.1-9.9-22.1-22.1v0c0-70.3,57-127.3,127.3-127.3h0c70.3,0,127.3,57,127.3,127.3v0
+		C429.5,355.1,419.6,365,407.4,365z"/>
+</g>
+<circle class="st0" cx="483.8" cy="119.7" r="65.6"/>
+<path class="st0" d="M484.9,207.2L484.9,207.2c-27.3,0-52.1,10.3-70.9,27.2c29,22.8,47.9,57.8,48.7,97.4h109.9
+	c10.2,0,18.5-8.3,18.5-18.5v0C591,254.7,543.5,207.2,484.9,207.2z"/>
+<circle class="st0" cx="116.1" cy="119.7" r="65.6"/>
+<path class="st0" d="M115.1,207.2L115.1,207.2c27.3,0,52.1,10.3,70.9,27.2c-29,22.8-47.9,57.8-48.7,97.4H27.4
+	c-10.2,0-18.5-8.3-18.5-18.5v0C9,254.7,56.5,207.2,115.1,207.2z"/>
+</svg>

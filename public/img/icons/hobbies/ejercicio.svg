@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ejercicio" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 400" style="enable-background:new 0 0 600 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
+</style>
+<g>
+	<line class="st0" x1="357.9" y1="212.3" x2="242.1" y2="212.3"/>
+	<line class="st0" x1="242.1" y1="183.6" x2="357.9" y2="183.6"/>
+	<path class="st0" d="M150,213.9h-2.5c-3.6,0-6.5-2.9-6.5-6.5v-15.7c0-3.6,2.9-6.5,6.5-6.5h2.5c3.6,0,6.5,2.9,6.5,6.5v15.7
+		C156.5,211,153.6,213.9,150,213.9z"/>
+	<g>
+		<path class="st0" d="M223.6,287h-17.6c-10.2,0-18.4-8.3-18.4-18.4V130.4c0-10.2,8.3-18.4,18.4-18.4h17.6
+			c10.2,0,18.4,8.3,18.4,18.4v138.1C242.1,278.7,233.8,287,223.6,287z"/>
+		<path class="st0" d="M174.6,260.6h-5c-7.2,0-13-5.8-13-13v-96c0-7.2,5.8-13,13-13h5c7.2,0,13,5.8,13,13v96
+			C187.6,254.7,181.8,260.6,174.6,260.6z"/>
+	</g>
+	<path class="st0" d="M393.9,287h-17.6c-10.2,0-18.4-8.3-18.4-18.4V130.4c0-10.2,8.3-18.4,18.4-18.4h17.6c10.2,0,18.4,8.3,18.4,18.4
+		v138.1C412.4,278.7,404.1,287,393.9,287z"/>
+	<path class="st0" d="M430.5,260.6h-5c-7.2,0-13-5.8-13-13v-96c0-7.2,5.8-13,13-13h5c7.2,0,13,5.8,13,13v96
+		C443.5,254.7,437.7,260.6,430.5,260.6z"/>
+	<path class="st0" d="M452.5,213.9H450c-3.6,0-6.5-2.9-6.5-6.5v-15.7c0-3.6,2.9-6.5,6.5-6.5h2.5c3.6,0,6.5,2.9,6.5,6.5v15.7
+		C459.1,211,456.1,213.9,452.5,213.9z"/>
+</g>
+<ellipse class="st1" cx="300" cy="199.5" rx="195.5" ry="196.5"/>
+</svg>

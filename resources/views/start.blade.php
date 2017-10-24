@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-
-<p class="wow fadeIn">Hola</p>
-
-
+<div class="global-container white start-logo">
+<h1>{{ Auth::user()}}</h1>
+<img src="{{asset('img/meethink.gif')}}" class="center">
+</div>
 @endsection
 
 @section('scripts')
@@ -12,6 +12,6 @@
 function skipPage(){
   window.location.href = '{{route("steps")}}';
 }
-setTimeout(skipPage, 2000);
+setTimeout(skipPage, 3000);
 </script>
 @endsection

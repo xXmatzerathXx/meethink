@@ -25,6 +25,7 @@
                     <a href="javascript:messageView();"><li>4</li></a>                
                 </ul>
             </div> -->
+        @if (Request::is('home') || (Request::is('/') && $user = Auth::user()))
             <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -36,7 +37,7 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('/logout') }}">
                         {{ config('app.name', 'Meethink') }}
                     </a>
                 </div>
@@ -45,22 +46,21 @@
                     <ul class="nav navbar-nav">
                         &nbsp;
                     </ul>
-                    @if (Request::is('home') || (Request::is('/') && $user = Auth::user()))
                     <ul class="nav navbar-nav navbar-right navigation-bar">
                         @guest   
-                        @else
+                            @else
                             <a href="javascript:userView();"><li>PERFIL</li></a>
                             <a href="javascript:listView();"><li>GENTE</li></a>   
                             <a href="javascript:proyectView();"><li>EQUIPOS</li></a>
                             <a href="javascript:messageView();"><li>MENSAJES</li></a> 
                             <a href="javascript:messageView();"><li>CREAR</li></a> 
-                            @endguest
+                        @endguest
                     </ul>
-                    @endif
+                    
                 </div>
             </div>
         </nav>
-       
+    @endif
     <div id="app">
         @yield('content')
     </div>

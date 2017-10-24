@@ -1,5 +1,83 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,900);@charset "UTF-8";
 
+@font-face {
+  font-family: gn;
+  src: url("/fonts/Gotham_Medium.woff");
+}
+
+@font-face {
+  font-family: gb;
+  src: url("/fonts/Gotham_Book.woff");
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.center {
+  margin: 0 auto;
+  display: block;
+}
+
+.panel-default {
+  border: none;
+}
+
+.global-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  top: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.global-container.white {
+  background: white;
+  background-image: none;
+}
+
+.flex-v-center {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+input.form-control {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid white !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border-radius: 0;
+  text-align: center;
+  color: white !important;
+  margin-bottom: 30px;
+}
+
+input::-webkit-input-placeholder {
+  color: white !important;
+  font-size: 18px;
+}
+
+input:-ms-input-placeholder {
+  color: white !important;
+  font-size: 18px;
+}
+
+input::-ms-input-placeholder {
+  color: white !important;
+  font-size: 18px;
+}
+
+input::placeholder {
+  color: white !important;
+  font-size: 18px;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -8351,23 +8429,91 @@ button.close {
 }
 
 @font-face {
-  font-family: dt;
-  src: url("/fonts/dolce/dolcethin.ttf");
+  font-family: gn;
+  src: url("/fonts/Gotham_Medium.woff");
 }
 
 @font-face {
-  font-family: dr;
-  src: url("/fonts/dolce/dolceregular.ttf");
+  font-family: gb;
+  src: url("/fonts/Gotham_Book.woff");
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.center {
+  margin: 0 auto;
+  display: block;
+}
+
+.panel-default {
+  border: none;
+}
+
+.global-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  top: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.global-container.white {
+  background: white;
+  background-image: none;
+}
+
+.flex-v-center {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+input.form-control {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid white !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border-radius: 0;
+  text-align: center;
+  color: white !important;
+  margin-bottom: 30px;
+}
+
+input::-webkit-input-placeholder {
+  color: white !important;
+  font-size: 18px;
+}
+
+input:-ms-input-placeholder {
+  color: white !important;
+  font-size: 18px;
+}
+
+input::-ms-input-placeholder {
+  color: white !important;
+  font-size: 18px;
+}
+
+input::placeholder {
+  color: white !important;
+  font-size: 18px;
 }
 
 * {
-  font-family: Roboto;
-  font-weight: 900;
+  font-family: gb;
   color: white;
 }
 
 body {
-  background-image: url(/img/fondo.png);
+  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
 
 h2 {
@@ -8425,25 +8571,165 @@ nav.navbar-default ul a li {
 }
 
 .btn-primary {
-  padding-top: 7px;
-  border: 1px solid white;
+  border: 2px solid white;
   color: white;
-  width: 140px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: transparent;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  font-family: dt;
-  font-size: 18px;
-  letter-spacing: 1px;
   text-decoration: none;
+  width: 120px;
+  padding: 6px 0;
+  border-radius: 5px;
+  height: 39px;
+  font-family: gn;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: transparent;
 }
 
-.btn-primary:hover {
-  text-decoration: none;
-  color: blue;
+.start-logo img {
+  -ms-flex-item-align: center;
+      align-self: center;
+  max-width: 100%;
+  padding: 0 10%;
+}
+
+#myCarousel {
+  height: 100%;
+  width: 100%;
+}
+
+#myCarousel .carousel-inner {
+  height: 100%;
+}
+
+#myCarousel .carousel-inner .item {
+  height: 100%;
+}
+
+#myCarousel .carousel-inner .item:after {
+  content: "";
+  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+}
+
+#myCarousel .carousel-inner .item .carousel-caption {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+  padding: 0 10%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#myCarousel .carousel-inner .item .carousel-caption h3 {
+  font-family: gn;
+  padding-bottom: 15px;
+  width: 100%;
+  position: relative;
+}
+
+#myCarousel .carousel-inner .item .carousel-caption h3.tittle-2:after {
+  display: none;
+}
+
+#myCarousel .carousel-inner .item .carousel-caption h3:after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 120px;
   background-color: white;
-  border-color: blue;
+  height: 1px;
+}
+
+#myCarousel .carousel-inner .item .carousel-caption img {
+  max-width: 70%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: -30px auto;
+}
+
+#myCarousel .carousel-inner .item .carousel-caption a {
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  padding: 6px 0;
+  border-radius: 5px;
+  height: 39px;
+  font-family: gn;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: transparent;
+}
+
+#myCarousel .carousel-inner .item img {
+  width: 120%;
+  height: auto;
+  max-width: none;
+}
+
+.login h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: gb;
+  font-size: 24px;
+}
+
+.user h3 {
+  text-align: center;
+}
+
+form.form-info {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form.form-info input {
+  display: none;
+}
+
+form.form-info label {
+  height: 150px;
+  text-align: center;
+  width: 150px;
+}
+
+form.form-info label img {
+  margin-bottom: 10px;
+}
+
+form.form-info button {
+  margin: 0 auto;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  padding: 6px 0;
+  border-radius: 5px;
+  height: 39px;
+  font-family: gn;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: transparent;
 }
 

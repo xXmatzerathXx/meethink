@@ -37,3 +37,80 @@ $input-color-placeholder: lighten($text-color, 30%);
 
 // Panels
 $panel-default-heading-bg: #fff;
+
+@font-face {
+  font-family: gn;
+  src: url("/fonts/Gotham_Medium.woff");
+}
+@font-face {
+  font-family: gb;
+  src: url("/fonts/Gotham_Book.woff");
+}
+.no-padding{
+  padding: 0;
+}
+.center{
+  margin: 0 auto;
+  display: block;
+}
+.panel-default{
+  border: none;
+}
+.global-container{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  &.white{
+    background: white;
+    background-image: none;
+  }
+}
+
+.flex-v-center{
+  align-self: center;
+}
+
+@mixin link(){
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  padding: 6px 0;
+  border-radius: 5px;
+  height: 39px;
+  font-family: gn;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: $transparent;
+  &:hover{
+  }
+}
+
+@mixin title (){
+  font-family: gn;
+  text-align: center;
+  padding-bottom: 15px;
+  width: 100%;
+  position: relative;
+}
+
+input.form-control {
+  background: transparent!important;
+  border: none!important;
+  border-bottom: 2px solid white!important;
+  box-shadow: none!important;
+  border-radius: 0;
+  text-align: center;
+  color: white!important;
+  margin-bottom: 30px;
+}
+input::placeholder {
+  color: white!important;
+  font-size: 18px;
+}
+
+$bg: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);

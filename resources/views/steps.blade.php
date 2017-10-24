@@ -2,54 +2,71 @@
 
 @section('content')
 
-  <div id="myCarousel" class="carousel slidep" data-ride="carousel" data-interval="false">
+
+<div class="global-container">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel"  data-interval="false">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+    <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-        <img src="http://placekitten.com/g/300/400" alt="Los Angeles" style="width:100%;">
-        <div class="carousel-caption">
-          <p>LA is always so much fun!</p>
+      <img src="{{asset('img/images/steps/1.png')}}" alt="Flower">
+      <div class="carousel-caption">
+          <h3>CONOCE PERSONAS</h3>
+          <p>A través de esta plataforma descubre los hobbies, las virtudes y las habilidades de tus compañeros</p>
         </div>
       </div>
 
       <div class="item">
-        <img src="http://placekitten.com/g/300/400" alt="Los Angeles" style="width:100%;">
-        <div class="carousel-caption">
-          <p>LA1 is always so much fun!</p>
+      <img src="{{asset('img/images/steps/2.png')}}" alt="Flower">
+      <div class="carousel-caption">
+          <h3>GENERA GRUPOS DE TRABAJO</h3>
+          <p>Crea, únete y participa en diversos proyectos con el fin de aplicar tus conocimientos y habilidades</p>
         </div>
       </div>
     
       <div class="item">
-        <img src="http://placekitten.com/g/300/400" alt="Los Angeles" style="width:100%;">
-        <div class="carousel-caption">
-          <p>LA2 is always so much fun!</p>
+      <img src="{{asset('img/images/steps/3.png')}}" alt="Flower">
+      <div class="carousel-caption">
+          <h3>EVALUA EL DESEMPEÑO DE TU EQUIPO</h3>
+          <p>Al finalizar cada proyecto, califica el desempeñi de tus compañeros con el objetivo de que puedan detectar sus áreas de oportunidad.</p>
         </div>
       </div>
 
       <div class="item">
-        <img src="http://placekitten.com/g/300/400" alt="Los Angeles" style="width:100%;">
-        <div class="carousel-caption">
-          <a href="{{route("home")}}">Empezar</a>
-          <p>LA3 is always so much fun!</p>
+      <img src="{{asset('img/images/steps/4.png')}}" alt="Flower">
+      <div class="carousel-caption">
+          <h3>OBTÉN RETROALIMENTACION</h3>
+          <p>Conoce que opinan tus compañeros de ti mediante gráficas y estadisticas que te servirán para identificar en que estás fallando y que puedes mejorar.</p>
         </div>
       </div>
+
+      <div class="item">
+        <div class="carousel-caption">
+            <h3 class="titile-2">COMENCEMOS</h3>
+            <p class="paragraph-2">Regístrate y deja que te conozcamos primero</p>
+            <img src="{{asset('img/comienzo.gif')}}" class="center">     
+            <a href="{{route("login")}}">Continuar</a>       
+          </div>
+        </div>
+
+      
+
   
     </div>
 
-    <!-- Left and right controls -->
-
+  </div>
 </div>
-
-
+  
 @endsection
 
 @section('scripts')
@@ -67,4 +84,11 @@
     
     });
 </script>
+<script>
+  $('.carousel').carousel({
+    wrap: false
+  });
+</script>
 @endsection
+
+
