@@ -58,7 +58,7 @@ class InformationController extends Controller
     }
     public function complete()
     {
-        if (isset($_POST['virtudes'])){
+        if (isset($_POST['skills'])){
             $skills = $_POST['skills'];
             $skillsJS = json_encode($skills); //converts an array to JSON string
             //json_decode($jsonString) // converts json string to php array

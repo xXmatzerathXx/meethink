@@ -8694,6 +8694,11 @@ nav.navbar-default ul a li {
   font-size: 24px;
 }
 
+.user {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
 .user h3 {
   text-align: center;
 }
@@ -8702,6 +8707,16 @@ form.form-info {
   text-align: center;
   max-width: 400px;
   margin: 0 auto;
+}
+
+form.form-info h3 {
+  margin-top: 15px;
+  font-family: gb;
+  margin-bottom: 30px;
+}
+
+form.form-info p {
+  margin-bottom: 15px;
 }
 
 form.form-info input {
@@ -8731,5 +8746,152 @@ form.form-info button {
   text-transform: uppercase;
   margin-bottom: 15px;
   background-color: transparent;
+}
+
+.hobbie {
+  margin-right: 15px;
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+
+.hobbie.arte {
+  background-image: url("/img/icons/hobbies/arte.svg");
+}
+
+.hobbie.cine {
+  background-image: url("/img/icons/hobbies/cine.svg");
+}
+
+.hobbie.dibujar {
+  background-image: url("/img/icons/hobbies/dibujar.svg");
+}
+
+.hobbie.ejercicio {
+  background-image: url("/img/icons/hobbies/ejercicio.svg");
+}
+
+.hobbie.escribir {
+  background-image: url("/img/icons/hobbies/escribir.svg");
+}
+
+.hobbie.leer {
+  background-image: url("/img/icons/hobbies/leer.svg");
+}
+
+.hobbie.musica {
+  background-image: url("/img/icons/hobbies/musica.svg");
+}
+
+.hobbie.amigos {
+  background-image: url("/img/icons/hobbies/salirconamigos.svg");
+}
+
+.hobbie.teatro {
+  background-image: url("/img/icons/hobbies/teatro.svg");
+}
+
+.hobbie.videojuegos {
+  background-image: url("/img/icons/hobbies/videojuegos.svg");
+}
+
+.skill {
+  margin-right: 15px;
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+
+.skill.animacion {
+  background-image: url("/img/icons/habilidades/animacion.svg");
+}
+
+.skill.diseñoi {
+  background-image: url("/img/icons/habilidades/diseñodeinterfaz.svg");
+}
+
+.skill.diseñop {
+  background-image: url("/img/icons/habilidades/diseñodepersonaje.svg");
+}
+
+.skill.edicion {
+  background-image: url("/img/icons/habilidades/edicion.svg");
+}
+
+.skill.fotografia {
+  background-image: url("/img/icons/habilidades/fotografia.svg");
+}
+
+.skill.ilustracion {
+  background-image: url("/img/icons/habilidades/ilustracion.svg");
+}
+
+.skill.investigacion {
+  background-image: url("/img/icons/habilidades/investigacion.svg");
+}
+
+.skill.modelado {
+  background-image: url("/img/icons/habilidades/modelado3d.svg");
+}
+
+.skill.produccion {
+  background-image: url("/img/icons/habilidades/produccion.svg");
+}
+
+.skill.programacion {
+  background-image: url("/img/icons/habilidades/programacion.svg");
+}
+
+.virtud {
+  margin-right: 15px;
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+
+.virtud.compromiso {
+  background-image: url("/img/icons/virtudes/compromiso.svg");
+}
+
+.virtud.empatia {
+  background-image: url("/img/icons/virtudes/empatia.svg");
+}
+
+.virtud.flexibilidad {
+  background-image: url("/img/icons/virtudes/flexibilidad.svg");
+}
+
+.virtud.honradez {
+  background-image: url("/img/icons/virtudes/honradez.svg");
+}
+
+.virtud.liderazgo {
+  background-image: url("/img/icons/virtudes/liderazgo.svg");
+}
+
+.virtud.perseverancia {
+  background-image: url("/img/icons/virtudes/perseverancia.svg");
+}
+
+.virtud.puntualidad {
+  background-image: url("/img/icons/virtudes/responsabilidad.svg");
+}
+
+.virtud.responsabilidad {
+  background-image: url("/img/icons/virtudes/socializacion.svg");
+}
+
+.virtud.socializacion {
+  background-image: url("/img/icons/virtudes/trabajoenequipo.svg");
+}
+
+.virtud.trabajo {
+  background-image: url("/img/icons/virtudes/socializacion.svg");
 }
 

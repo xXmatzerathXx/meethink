@@ -45,15 +45,15 @@ Route::get('/logout', function () {
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/start', 'StartController@start')->name('start');
 Route::get('/steps', 'stepsController@steps')->name('steps');
-Route::get('/information', 'InformationController@information')->name('information');
 Route::post('/user', 'UserController@user')->name('user');
 Route::post('/proyect', 'ProyectController@proyect')->name('proyect');
 Route::post('/list', 'ListController@list')->name('list')->middleware('auth');;
 Route::post('/message', 'MessageController@message')->name('message');
-Route::post('/information2', 'InformationController@step2');
-Route::post('/information3', 'InformationController@step3');
-Route::post('/information4', 'InformationController@step4');
-Route::post('/complete', 'InformationController@complete');
+Route::any('/information', 'InformationController@information')->name('information');
+Route::any('/information2', 'InformationController@step2')->name('information2');
+Route::any('/information3', 'InformationController@step3');
+Route::any('/information4', 'InformationController@step4');
+Route::any('/complete', 'InformationController@complete');
 
 
 

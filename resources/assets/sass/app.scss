@@ -160,6 +160,8 @@ nav.navbar-default{
 
 //USUARIO
 .user{
+  max-width: 95%;
+  margin: 0 auto;
   h3{
     text-align: center;
   }
@@ -167,6 +169,14 @@ nav.navbar-default{
 
 //FORMS INFO
 form.form-info{
+  h3{
+    margin-top: 15px;
+    font-family: gb;
+    margin-bottom: 30px;
+  }
+  p{
+    margin-bottom: 15px;
+  }
   text-align: center;
   max-width: 400px;
   margin: 0 auto;
@@ -185,4 +195,64 @@ form.form-info{
     margin: 0 auto;
     @include link();
   }
+}
+
+//Hobbies
+.hobbie{
+  margin-right:  15px;
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  &.arte{background-image: url("/img/icons/hobbies/arte.svg")}
+  &.cine{background-image: url("/img/icons/hobbies/cine.svg")}
+  &.dibujar{background-image: url("/img/icons/hobbies/dibujar.svg")}
+  &.ejercicio{background-image: url("/img/icons/hobbies/ejercicio.svg")}
+  &.escribir{background-image: url("/img/icons/hobbies/escribir.svg")}
+  &.leer{background-image: url("/img/icons/hobbies/leer.svg")}
+  &.musica{background-image: url("/img/icons/hobbies/musica.svg")}
+  &.amigos{background-image: url("/img/icons/hobbies/salirconamigos.svg")}
+  &.teatro{background-image: url("/img/icons/hobbies/teatro.svg")}
+  &.videojuegos{background-image: url("/img/icons/hobbies/videojuegos.svg")}
+}
+
+//habilidades
+.skill{
+  margin-right:  15px;
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  &.animacion{background-image: url("/img/icons/habilidades/animacion.svg")}
+  &.diseñoi{background-image: url("/img/icons/habilidades/diseñodeinterfaz.svg")}
+  &.diseñop{background-image: url("/img/icons/habilidades/diseñodepersonaje.svg")}
+  &.edicion{background-image: url("/img/icons/habilidades/edicion.svg")}
+  &.fotografia{background-image: url("/img/icons/habilidades/fotografia.svg")}
+  &.ilustracion{background-image: url("/img/icons/habilidades/ilustracion.svg")}
+  &.investigacion{background-image: url("/img/icons/habilidades/investigacion.svg")}
+  &.modelado{background-image: url("/img/icons/habilidades/modelado3d.svg")}
+  &.produccion{background-image: url("/img/icons/habilidades/produccion.svg")}
+  &.programacion{background-image: url("/img/icons/habilidades/programacion.svg")}
+}
+
+//habilidades
+.virtud{
+  margin-right:  15px;
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  &.compromiso{background-image: url("/img/icons/virtudes/compromiso.svg")}
+  &.empatia{background-image: url("/img/icons/virtudes/empatia.svg")}
+  &.flexibilidad{background-image: url("/img/icons/virtudes/flexibilidad.svg")}
+  &.honradez{background-image: url("/img/icons/virtudes/honradez.svg")}
+  &.liderazgo{background-image: url("/img/icons/virtudes/liderazgo.svg")}
+  &.perseverancia{background-image: url("/img/icons/virtudes/perseverancia.svg")}
+  &.puntualidad{background-image: url("/img/icons/virtudes/responsabilidad.svg")}
+  &.responsabilidad{background-image: url("/img/icons/virtudes/socializacion.svg")}
+  &.socializacion{background-image: url("/img/icons/virtudes/trabajoenequipo.svg")}
+  &.trabajo{background-image: url("/img/icons/virtudes/socializacion.svg")}  
 }
