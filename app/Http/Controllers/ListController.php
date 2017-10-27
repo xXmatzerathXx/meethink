@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class ListController extends Controller
 {
@@ -23,6 +23,7 @@ class ListController extends Controller
      */
     public function list()
     {
-        return view('list');
+        $users = DB::table('users')->pluck('name');
+        return view('list', ['users'=>$users]);
     }
 }

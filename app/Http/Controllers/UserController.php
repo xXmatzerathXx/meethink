@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
     /**
@@ -15,7 +15,6 @@ class UserController extends Controller
     {
         $this->middleware('auth');
     }
-
     /**
      * Show the application dashboard.
      *
@@ -23,6 +22,16 @@ class UserController extends Controller
      */
     public function user()
     {
-        return view('user');
+        $name = Auth::user()->name;
+        $data = DB::table('user_information')->where('user', '=', "$name")->get();
+        $dataArray = json_decode($data, true);  
+        return view('user', ['dataArray' => $dataArray ]);
+    }
+    public function single($user)
+    {
+        $name = $user;
+        $data = DB::table('user_information')->where('user', '=', "$user")->get();
+        $dataArray = json_decode($data, true);  
+        return view('usersingle', ['dataArray' => $dataArray, 'user' => $user  ]);
     }
 }
