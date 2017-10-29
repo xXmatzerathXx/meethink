@@ -26,4 +26,8 @@ class ListController extends Controller
         $users = DB::table('users')->pluck('name');
         return view('list', ['users'=>$users]);
     }
+    public function loading()
+    {
+        return view('loading');
+    }
 }

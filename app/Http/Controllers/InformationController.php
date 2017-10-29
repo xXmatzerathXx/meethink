@@ -71,7 +71,7 @@ class InformationController extends Controller
                 'status' => 'true',
             ]);
         }
-        return redirect ('/');
+        return redirect ('/loading');
     }
 }
 

@@ -6,11 +6,22 @@ $tags = $proyect[0]["tags"];
 $teams = json_decode($proyect[0]["team"], true);
 @endphp
 
-<p>{{$nombre}}</p>
-<p>{{$descripcion}}</p>
-<p>
-@foreach ($teams as $team)
-<span>{{$team}},</span>
-<span>@endforeach</span>
-<p>
-<p>{{$tags}}</p>
+@extends('layouts.app')
+@section('content')
+
+@include ('nav-complete')
+
+<div class="content-app">
+<div class="single-proyect">
+    <h2>{{$nombre}}</h2>
+    <h3>Descripcion:</h3>
+    <p>{{$descripcion}}</p>
+    <h3>Equipo:</h3>
+    @foreach ($teams as $team)
+      <span>{{$team}},</span>
+    @endforeach
+    <h3>Tags:</h3>
+    <p>{{$tags}}</p>
+  </div>
+</div>
+@endsection

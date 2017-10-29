@@ -2,6 +2,7 @@
 
 @section('content')
 
+@include ('nav-solo')
 
 <div class="global-container">
   
@@ -55,7 +56,7 @@
             <h3 class="titile-2">COMENCEMOS</h3>
             <p class="paragraph-2">Regístrate y deja que te conozcamos primero</p>
             <img src="{{asset('img/comienzo.gif')}}" class="center">     
-            <a href="{{route("login")}}">Continuar</a>       
+            <a class="continuar-b" href="{{route("login")}}">Continuar</a>       
           </div>
         </div>
 

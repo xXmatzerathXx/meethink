@@ -46,9 +46,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/start', 'StartController@start')->name('start');
 Route::get('/steps', 'stepsController@steps')->name('steps');
 Route::any('/user', 'UserController@user')->name('user');
-Route::post('/proyect', 'ProyectController@proyect')->name('proyect');
+Route::any('/proyect', 'ProyectController@proyect')->name('proyect');
 Route::any('/list', 'ListController@list')->name('list')->middleware('auth');;
-Route::post('/message', 'MessageController@message')->name('message');
+Route::any('/message', 'MessageController@message')->name('message');
+Route::post('/enviarmensaje', 'MessageController@enviarmessage')->name('enviarmessage');
 Route::any('/information', 'InformationController@information')->name('information');
 Route::any('/information2', 'InformationController@step2')->name('information2');
 Route::any('/information3', 'InformationController@step3');
@@ -56,6 +57,16 @@ Route::any('/information4', 'InformationController@step4');
 Route::any('/complete', 'InformationController@complete');
 Route::any('/team', 'ProyectController@team');
 Route::any('/usuario/{user}', 'UserController@single');
+Route::any('/evaluacion', 'ProyectController@evaluar');
+Route::any('/portafolio', 'UserController@portafolio');
 Route::any('newproyect', 'ProyectController@new')->name('newproyect');
 Route::any('proyectsingle/{nombreP}', 'ProyectController@single')->name('proyectosingle');
+Route::any('updatem', 'MessageController@update')->name('updatem');
+Route::any('loading', 'ListController@loading')->name('loading');
+Route::get('virtudessingle', function () {
+    return view('virtudes');
+});
+Route::get('habilidadessingle', function () {
+    return view('hablilidades');
+});
 

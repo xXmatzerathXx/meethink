@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+
 
 class ProyectController extends Controller
 {
@@ -24,7 +26,8 @@ class ProyectController extends Controller
      */
     public function proyect()
     {
-        return view('proyect');
+        $proyectos = DB::table('proyecto')->get();
+        return view('proyect', ['proyectos' => $proyectos]);
     }
     public function new()
     {
@@ -32,6 +35,7 @@ class ProyectController extends Controller
     }
     public function team()
     {
+        $me = Auth::user()->name;
         $nombreP = $_POST['proyectName'];
         $descriptionP = $_POST['proyectDescription'];
         $spectsP = $_POST['proyectSpects'];
@@ -40,6 +44,7 @@ class ProyectController extends Controller
         $users = DB::table('users')->pluck('name');
         DB::table('proyecto')->insert([
             'nombre' => $nombreP,
+            'lider' => $me,
             'descripcion' => $descriptionP,
             'especificaciones' => $spectsP,
             'integrantes' => $membersP,
@@ -49,13 +54,23 @@ class ProyectController extends Controller
     }
     public function single($nombreP)
     {
-        $team = $_POST['member'];
-        $teamJS = json_encode($team);
-        DB::table('proyecto')->where('nombre', '=', "$nombreP")->update([
-            'team' => $teamJS,
-        ]);
+        if (isset($_POST['member'])) {
+            $team = $_POST['member'];            
+            $teamJS = json_encode($team);
+            DB::table('proyecto')->where('nombre', '=', "$nombreP")->update([
+                'team' => $teamJS,
+            ]);
+        }
         $proyect = DB::table('proyecto')->where('nombre', '=', "$nombreP")->get();
         $proyect = json_decode($proyect, true);
         return view('singleproyect',['nombreP' => $nombreP, 'proyect' => $proyect]);
+    }
+
+    public function evaluar()
+    {
+        $id = $_POST['id'];  
+        $proyecto = DB::table('proyecto')->where('id', '=', "$id")->get();
+        $proyecto = json_decode($proyecto, true);
+        return view('evaluacion', ['proyecto' => $proyecto]);
     }
 }

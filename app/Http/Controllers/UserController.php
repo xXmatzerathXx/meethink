@@ -34,4 +34,8 @@ class UserController extends Controller
         $dataArray = json_decode($data, true);  
         return view('usersingle', ['dataArray' => $dataArray, 'user' => $user  ]);
     }
+    public function portafolio()
+    {  
+        return view('portafolio');
+    }
 }

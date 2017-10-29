@@ -76,6 +76,7 @@ $panel-default-heading-bg: #fff;
 
 @mixin link(){
   border: 2px solid white;
+  text-align: center;
   color: white;
   text-decoration: none;
   width: 120px;
@@ -86,8 +87,8 @@ $panel-default-heading-bg: #fff;
   text-transform: uppercase;
   margin-bottom: 15px;
   background-color: $transparent;
-  &:hover{
-  }
+  display: block;
+
 }
 
 @mixin title (){

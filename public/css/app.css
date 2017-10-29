@@ -8506,6 +8506,27 @@ input::placeholder {
   font-size: 18px;
 }
 
+.link-portafolio {
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  padding: 6px 0;
+  border-radius: 5px;
+  height: 39px;
+  font-family: gn;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: transparent;
+  display: block;
+  margin: 15px auto;
+}
+
+#app {
+  overflow: hidden;
+}
+
 * {
   font-family: gb;
   color: white;
@@ -8517,26 +8538,29 @@ body {
 }
 
 .content-app {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
-h2 {
+/*h2{
   color: white;
   font-size: 70px;
   padding-bottom: 10px;
   display: block;
   font-size: 900;
   position: relative;
-}
+  &:after{
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    content: "";
+    background-color: white;
+    bottom: 0;
+    left: 0;
+  }
+}*/
 
-h2:after {
-  position: absolute;
-  height: 4px;
-  width: 100px;
-  content: "";
-  background-color: white;
-  bottom: 0;
-  left: 0;
+.continuar-b {
+  margin-top: -40px;
 }
 
 .navigation-bar {
@@ -8545,6 +8569,8 @@ h2:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -8552,9 +8578,70 @@ h2:after {
   margin: 0;
 }
 
+.navigation-bar a {
+  width: 25%;
+  text-align: center;
+}
+
+.navigation-bar a li {
+  padding: 15px;
+}
+
 .navigation-bar a li img {
+  height: 35px;
+  width: 35px;
+}
+
+.user-hobbies,
+.virtudes,
+.skills {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.user-hobbies h4,
+.virtudes h4,
+.skills h4 {
+  width: 100%;
+}
+
+.user-menu {
+  padding: 5px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 0px 0px 16px 0px rgba(50, 50, 50, 0.75);
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+.user-menu.solo {
+  height: 55px;
+  z-index: 10;
+}
+
+.user-menu .usuario-pic {
+  width: 55px;
+  height: 55px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.user-menu .menu-logo {
   height: 50px;
-  width: 50px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .panel {
@@ -8563,6 +8650,7 @@ h2:after {
 
 .btn-primary {
   border: 2px solid white;
+  text-align: center;
   color: white;
   text-decoration: none;
   width: 120px;
@@ -8573,6 +8661,7 @@ h2:after {
   text-transform: uppercase;
   margin-bottom: 15px;
   background-color: transparent;
+  display: block;
 }
 
 .start-logo img {
@@ -8585,6 +8674,10 @@ h2:after {
 #myCarousel {
   height: 100%;
   width: 100%;
+}
+
+#myCarousel .carousel-indicators {
+  bottom: 90px;
 }
 
 #myCarousel .carousel-inner {
@@ -8602,7 +8695,7 @@ h2:after {
   height: 100%;
   width: 100%;
   position: absolute;
-  opacity: 0.6;
+  opacity: 0.9;
   top: 0;
   left: 0;
 }
@@ -8656,10 +8749,12 @@ h2:after {
   -ms-flex-item-align: center;
       align-self: center;
   margin: -30px auto;
+  margin-top: -75px;
 }
 
 #myCarousel .carousel-inner .item .carousel-caption a {
   border: 2px solid white;
+  text-align: center;
   color: white;
   text-decoration: none;
   width: 120px;
@@ -8670,6 +8765,8 @@ h2:after {
   text-transform: uppercase;
   margin-bottom: 15px;
   background-color: transparent;
+  display: block;
+  margin-top: -20px;
 }
 
 #myCarousel .carousel-inner .item img {
@@ -8688,6 +8785,13 @@ h2:after {
 .user {
   max-width: 95%;
   margin: 0 auto;
+}
+
+.user .user-big {
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
 }
 
 .user h3 {
@@ -8715,7 +8819,12 @@ form.form-info input {
   display: none;
 }
 
+form.form-info input:checked ~ label {
+  opacity: 1;
+}
+
 form.form-info label {
+  opacity: 0.5;
   height: 150px;
   text-align: center;
   width: 150px;
@@ -8728,6 +8837,7 @@ form.form-info label img {
 form.form-info button {
   margin: 0 auto;
   border: 2px solid white;
+  text-align: center;
   color: white;
   text-decoration: none;
   width: 120px;
@@ -8738,10 +8848,33 @@ form.form-info button {
   text-transform: uppercase;
   margin-bottom: 15px;
   background-color: transparent;
+  display: block;
+}
+
+.skills a,
+.virtudes a {
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  padding: 6px 0;
+  border-radius: 5px;
+  height: 39px;
+  font-family: gn;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: transparent;
+  display: block;
+  margin: 15px auto;
+}
+
+.content-p {
+  width: 100%;
 }
 
 .hobbie {
-  margin-right: 15px;
+  width: 20%;
   height: 50px;
   width: 50px;
   background-position: center;
@@ -8790,7 +8923,7 @@ form.form-info button {
 }
 
 .skill {
-  margin-right: 15px;
+  width: 20%;
   height: 50px;
   width: 50px;
   background-position: center;
@@ -8839,8 +8972,8 @@ form.form-info button {
 }
 
 .virtud {
-  margin-right: 15px;
   height: 50px;
+  width: 20%;
   width: 50px;
   background-position: center;
   background-size: cover;
@@ -8897,7 +9030,7 @@ form.form-info button {
   height: 75px;
   width: 75px;
   display: block;
-  background-image: url("/img/icons/nav/boton-proyecto.png");
+  background-image: url("/img/icons/nav/iconomethink.svg");
   background-position: center;
   background-size: cover;
 }
@@ -8955,6 +9088,7 @@ form.form-info button {
 .form-proyect button {
   margin: 0 auto;
   border: 2px solid white;
+  text-align: center;
   color: white;
   text-decoration: none;
   width: 120px;
@@ -8965,5 +9099,391 @@ form.form-info button {
   text-transform: uppercase;
   margin-bottom: 15px;
   background-color: transparent;
+  display: block;
+}
+
+.list-users {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  margin-top: 50px;
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-users .portfolio {
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  padding: 6px 0;
+  border-radius: 5px;
+  height: 39px;
+  font-family: gn;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: transparent;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  text-align: center;
+}
+
+.list-users li {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.list-users li .left {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.list-users li .right {
+  float: left;
+  margin-left: 15px;
+}
+
+.list-users li .right a {
+  display: block;
+}
+
+.list-users li .right img {
+  height: 30px;
+}
+
+.new-message {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.new-message form {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.new-message form textarea {
+  color: black;
+  padding: 10px;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.new-message form button {
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  padding: 6px 0;
+  border-radius: 5px;
+  height: 39px;
+  font-family: gn;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: transparent;
+  display: block;
+  margin: 5px;
+}
+
+.portafolio {
+  margin-top: 50px;
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+.portafolio h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.portafolio ul {
+  list-style: none;
+  padding: 0;
+}
+
+.portafolio ul li {
+  margin-bottom: 60px;
+}
+
+.bandeja-entrada {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+.bandeja-entrada .mensaje-modal {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bandeja-entrada .mensaje-modal .el-mensaje {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bandeja-entrada .mensaje-modal .el-mensaje p.mensaje-t {
+  width: 100%;
+  padding: 100px;
+  max-width: 350px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+.bandeja-entrada .mensaje-modal .el-mensaje form button {
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  padding: 6px 0;
+  border-radius: 5px;
+  height: 39px;
+  font-family: gn;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: transparent;
+  display: block;
+  margin: 15px;
+}
+
+.bandeja-entrada .mensaje p span {
+  margin-right: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bandeja-entrada .mensaje p span.nuevo {
+  width: 60px;
+  height: 40px;
+  background-image: url(/img/icons/nav/sobrecerrado.svg);
+}
+
+.bandeja-entrada .mensaje p span.abierto {
+  width: 60px;
+  height: 61px;
+  background-image: url(/img/icons/nav/sobreabierto.svg);
+}
+
+.m-bottom {
+  margin-bottom: 30px !important;
+}
+
+.proyectos-list {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.proyectos-list h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+.proyectos-list .proyect-list {
+  padding: 0;
+}
+
+.proyectos-list .proyect-list li {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.proyectos-list .proyect-list li .left {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.proyectos-list .proyect-list li .left img {
+  max-width: 100%;
+}
+
+.proyectos-list .proyect-list li .right {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.proyectos-list .proyect-list li .right .team-status {
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+
+.proyectos-list .proyect-list li .right .team-status-active {
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+
+.proyectos-list .proyect-list li .right .team-status-active p {
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  padding: 6px 0;
+  border-radius: 5px;
+  height: 39px;
+  font-family: gn;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: transparent;
+  display: block;
+  margin: 0;
+}
+
+.proyectos-list .proyect-list li .right h3 {
+  width: 100%;
+  font-size: 16px;
+  margin: 2.5px;
+}
+
+.proyectos-list .proyect-list li .right h3 p,
+.proyectos-list .proyect-list li .right h3 a {
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  margin: 2.5px;
+}
+
+.single-proyect {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.single-proyect h2 {
+  text-align: center;
+}
+
+.evaluacion {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.evaluacion .user img {
+  width: 100px;
+  height: 100px;
+}
+
+.evaluacion .user p {
+  font-size: 28px;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0;
+}
+
+.evaluacion .metricas {
+  padding: 0;
+  list-style: none;
+}
+
+.evaluacion .metricas li {
+  float: left;
+  width: 100%;
+  padding-left: 50px;
+}
+
+.evaluacion .metricas li p {
+  float: left;
+}
+
+.evaluacion .metricas li .controles {
+  float: right;
+  color: black;
+}
+
+.evaluacion .metricas li .controles span {
+  height: 50px;
+  width: 50px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.evaluacion .metricas li .controles input {
+  height: 40px;
+  width: 40px;
+  padding: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  color: white;
+  padding-top: 0;
+  margin-top: -4px;
+  font-size: 19px;
+}
+
+.virskill {
+  text-align: center;
+}
+
+.graph {
+  vertical-align: middle;
+  max-width: 80%;
+}
+
+.graph h2 {
+  font-family: gr;
 }
 
