@@ -13,11 +13,20 @@
 
 //
 
+.link{
+  @include link();
+  margin: 15px;
+  display: inline-block;
+
+}
+
 .link-portafolio {
   @include link();
   margin: 15px auto;
 }
-
+.nuevo-proyecto{
+  margin-top: 50px;
+}
 #app{
   overflow: hidden;
 }
@@ -64,11 +73,20 @@ body{
   a{
     width: 25%;
     text-align: center;    
+    &.active{
+      border-bottom: 3px solid white;
+      li{
+        img{
+          opacity: 1;
+        }
+      }
+    }
     li{
       padding: 15px;
       img{
         height: 35px;
         width: 35px;
+        opacity: 0.5;
       }
     }
   }
@@ -258,7 +276,7 @@ form.form-info{
   }
 }
 .skills, .virtudes{
-  a{
+  a.link{
     @include link();
     margin: 15px auto;
   }
@@ -371,6 +389,7 @@ form.form-info{
   button{
     margin: 0 auto;
     @include link();
+    display: inline-block;
   }
 }
 
@@ -383,7 +402,7 @@ form.form-info{
   padding: 0;
   list-style: none;
   margin-top: 50px;
-  width: 85%;
+  width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -497,6 +516,7 @@ form.form-info{
         button{
           @include link();
           margin: 15px;
+          display: inline;
         }
       }
     }
@@ -521,7 +541,9 @@ form.form-info{
     }
   }
 }
-
+.member{
+  display: none;
+}
 .m-bottom{
   margin-bottom: 30px!important;
 }
@@ -530,9 +552,10 @@ form.form-info{
   width: 90%;
   display: block;
   margin: 0 auto;
+  margin-top: 50px;  
   h2{
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
     margin-top: 15px;
   }
   .proyect-list{
@@ -541,7 +564,7 @@ form.form-info{
       margin-top: 15px;
       display: flex;
       .left{
-        width: 30%; 
+        width: 100px;; 
         display: flex;
         align-items: center;
         img{
@@ -558,6 +581,9 @@ form.form-info{
           position: absolute;
           right: 0;
           top: 15px;
+          p{
+            padding: 9px 0;
+          }
         }
         .team-status-active{
           position: absolute;
@@ -566,16 +592,17 @@ form.form-info{
           p{
             @include link;
             margin: 0;
+            padding: 9px 0;
           }
         }
         h3{
           width: 100%;
-          font-size: 16px;
+          font-size: 14px;
           margin: 2.5px;
           p, a{
             width: 100%;
             color: white;
-            font-size: 16px;
+            font-size: 14px;
             margin: 2.5px;
           }
         }
@@ -659,4 +686,31 @@ form.form-info{
   }
   vertical-align: middle;
   max-width: 80%;
+}
+
+.single-act {
+  max-width: 90%;
+  margin: 0 auto;
+  img {
+    max-width: 280px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+  }
+  h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+  h4 {
+    margin-top: 15px;
+  }
+  a {
+    @include link();
+    margin: 15px auto;
+  }
+}
+
+form.proyectosingle{
+  width: 90%;
+  margin: 0 auto;
 }

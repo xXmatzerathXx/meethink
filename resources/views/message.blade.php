@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('content')
 @include ('nav-complete')
-
 <div class="bandeja-entrada">
 @foreach ($mensajes as $mensaje)
 <div class="mensaje">
@@ -19,14 +18,16 @@
 </div>
 @endif
 @endforeach
-
 @if(!$mensajes->count())
 <div class="no-mensajes">
   <h3>No tienes mensajes</h3>
-<div>
+</div>
 @endif
 </div>
 
+
+
+@include('boton-proyecto')
 @endsection
 
 @section ('scripts')
@@ -34,5 +35,8 @@
   function modal(mensaje){
     $('.mensaje-modal-'+mensaje).toggle();
   }
+</script>
+<script>
+    $('.navigation-bar .message').addClass('active');
 </script>
 @endsection

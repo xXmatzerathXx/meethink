@@ -32,6 +32,7 @@
         <button type="button" onClick="nuevo('null')">Cancelar</button> <button type="submit" >Enviar</button>
     {!! Form::close() !!}
 </div>
+@include('boton-proyecto')
 @endsection
 
 
@@ -43,5 +44,8 @@
     $('.input-dest').val(destinatario);
     $('.destinatario-t').html(destinatario);
   };
+</script>
+<script>
+    $('.navigation-bar .list').addClass('active');
 </script>
 @endsection

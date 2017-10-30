@@ -5,7 +5,7 @@
 @include ('nav-complete')
 
 <div class="proyectos-list">
-<h2>MIS PROYECTOS</h2>
+<h2>MIS EQUIPOS</h2>
 <ul class="proyect-list m-bottom">
 @foreach ($proyectos as $proyecto)
 @php ($members = json_decode($proyecto->team, true))
@@ -37,7 +37,7 @@
 
 
 <ul class="proyect-list">
-<h2>OTROS PROYECTOS</h2>
+<h2>OTROS EQUIPOS</h2>
 @foreach ($proyectos as $proyecto)
 @php ($members = json_decode($proyecto->team, true))
 @if (!in_array($user, $members))
@@ -56,4 +56,10 @@
 </ul>
 
 </div>
+@include('boton-proyecto')
+@endsection
+@section ('scripts')
+<script>
+    $('.navigation-bar .proyect').addClass('active');
+</script>
 @endsection

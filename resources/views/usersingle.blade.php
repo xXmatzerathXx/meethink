@@ -15,20 +15,22 @@
   <div class="user-hobbies">
     <h4>Hobbies</h4>
     @foreach ($hobbies as $hobbie)
-    <div class="hobbie {{$hobbie}}"></div>
+    <a href="/hobbi"><div class="hobbie {{$hobbie}}"></div></a>
     @endforeach
   </div>
   <div class="virtudes">
     <h4>Virtudes</h4>
     @foreach ($virtudes as $virtud)
-    <div class="virtud {{$virtud}}"></div>
+    <a href="/hobbi"><div class="virtud {{$virtud}}"></div></a>
     @endforeach
+    <div class="content-p"><a class="link" href="/habilidadessingle">VER</a></div>
   </div>
   <div class="skills">
     <h4>Habilidades</h4>
     @foreach ($skills as $skill)
-    <div class="skill {{$skill}}"></div>
+    <a href="/hobbi"><div class="skill {{$skill}}"></div></a>
     @endforeach
+    <div class="content-p"><a class="link" href="/habilidadessingle">VER</a></div>
   </div>
 </div>
 </div>

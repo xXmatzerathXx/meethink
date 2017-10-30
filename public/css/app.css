@@ -8506,6 +8506,24 @@ input::placeholder {
   font-size: 18px;
 }
 
+.link {
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  padding: 6px 0;
+  border-radius: 5px;
+  height: 39px;
+  font-family: gn;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: transparent;
+  display: block;
+  margin: 15px;
+  display: inline-block;
+}
+
 .link-portafolio {
   border: 2px solid white;
   text-align: center;
@@ -8521,6 +8539,10 @@ input::placeholder {
   background-color: transparent;
   display: block;
   margin: 15px auto;
+}
+
+.nuevo-proyecto {
+  margin-top: 50px;
 }
 
 #app {
@@ -8583,6 +8605,14 @@ body {
   text-align: center;
 }
 
+.navigation-bar a.active {
+  border-bottom: 3px solid white;
+}
+
+.navigation-bar a.active li img {
+  opacity: 1;
+}
+
 .navigation-bar a li {
   padding: 15px;
 }
@@ -8590,6 +8620,7 @@ body {
 .navigation-bar a li img {
   height: 35px;
   width: 35px;
+  opacity: 0.5;
 }
 
 .user-hobbies,
@@ -8851,8 +8882,8 @@ form.form-info button {
   display: block;
 }
 
-.skills a,
-.virtudes a {
+.skills a.link,
+.virtudes a.link {
   border: 2px solid white;
   text-align: center;
   color: white;
@@ -9100,6 +9131,7 @@ form.form-info button {
   margin-bottom: 15px;
   background-color: transparent;
   display: block;
+  display: inline-block;
 }
 
 .list-users {
@@ -9107,7 +9139,7 @@ form.form-info button {
   padding: 0;
   list-style: none;
   margin-top: 50px;
-  width: 85%;
+  width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -9288,6 +9320,7 @@ form.form-info button {
   background-color: transparent;
   display: block;
   margin: 15px;
+  display: inline;
 }
 
 .bandeja-entrada .mensaje p span {
@@ -9308,6 +9341,10 @@ form.form-info button {
   background-image: url(/img/icons/nav/sobreabierto.svg);
 }
 
+.member {
+  display: none;
+}
+
 .m-bottom {
   margin-bottom: 30px !important;
 }
@@ -9316,11 +9353,12 @@ form.form-info button {
   width: 90%;
   display: block;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .proyectos-list h2 {
   text-align: center;
-  font-size: 28px;
+  font-size: 24px;
   margin-top: 15px;
 }
 
@@ -9336,7 +9374,7 @@ form.form-info button {
 }
 
 .proyectos-list .proyect-list li .left {
-  width: 30%;
+  width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9367,6 +9405,10 @@ form.form-info button {
   top: 15px;
 }
 
+.proyectos-list .proyect-list li .right .team-status p {
+  padding: 9px 0;
+}
+
 .proyectos-list .proyect-list li .right .team-status-active {
   position: absolute;
   right: 0;
@@ -9388,11 +9430,12 @@ form.form-info button {
   background-color: transparent;
   display: block;
   margin: 0;
+  padding: 9px 0;
 }
 
 .proyectos-list .proyect-list li .right h3 {
   width: 100%;
-  font-size: 16px;
+  font-size: 14px;
   margin: 2.5px;
 }
 
@@ -9400,7 +9443,7 @@ form.form-info button {
 .proyectos-list .proyect-list li .right h3 a {
   width: 100%;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   margin: 2.5px;
 }
 
@@ -9485,5 +9528,48 @@ form.form-info button {
 
 .graph h2 {
   font-family: gr;
+}
+
+.single-act {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.single-act img {
+  max-width: 280px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+}
+
+.single-act h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.single-act h4 {
+  margin-top: 15px;
+}
+
+.single-act a {
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  padding: 6px 0;
+  border-radius: 5px;
+  height: 39px;
+  font-family: gn;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: transparent;
+  display: block;
+  margin: 15px auto;
+}
+
+form.proyectosingle {
+  width: 90%;
+  margin: 0 auto;
 }
 

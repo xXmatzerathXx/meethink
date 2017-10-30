@@ -50,7 +50,7 @@ class ProyectController extends Controller
             'integrantes' => $membersP,
             'tags' => $tagsP
         ]);
-        return view('teamselect', ['users' => $users, 'nombreP' => $nombreP]);
+        return view('teamselect', ['users' => $users, 'nombreP' => $nombreP, 'miembros'=> $membersP ]);
     }
     public function single($nombreP)
     {

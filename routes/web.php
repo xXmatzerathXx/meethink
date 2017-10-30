@@ -69,4 +69,11 @@ Route::get('virtudessingle', function () {
 Route::get('habilidadessingle', function () {
     return view('hablilidades');
 });
+Route::get('actividad', function () {
+    return view('hobbie');
+});
+Route::get('hobbi', function () {
+    return view('hobb');
+});
+
 
