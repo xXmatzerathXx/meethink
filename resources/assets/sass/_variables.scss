@@ -68,6 +68,20 @@ $panel-default-heading-bg: #fff;
   }
 }
 
+.global-container-r{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  &.white{
+    background: white;
+    background-image: none;
+  }
+}
+
 .flex-v-center{
   align-self: center;
 }

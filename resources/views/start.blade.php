@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="global-container white start-logo">
+<div class="global-container-r white start-logo">
 <h1>{{ Auth::user()}}</h1>
 <img src="{{asset('img/meethink.gif')}}" class="center">
 </div>

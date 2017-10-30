@@ -4,7 +4,7 @@
 
 @include ('nav-solo')
 
-<div class="global-container">
+<div class="global-container-r">
   
   <div id="myCarousel" class="carousel slide" data-ride="carousel"  data-interval="false">
     <!-- Indicators -->
