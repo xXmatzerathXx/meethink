@@ -36,6 +36,7 @@ class UserController extends Controller
     }
     public function portafolio()
     {  
-        return view('portafolio');
+        $proyectos = DB::table('proyecto')->get();
+        return view('portafolio', ['proyectos' => $proyectos]);
     }
 }
