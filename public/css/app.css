@@ -8632,6 +8632,11 @@ body {
   margin: 0;
 }
 
+.navigation-bar:after,
+.navigation-bar:before {
+  display: none;
+}
+
 .navigation-bar a {
   width: 25%;
   text-align: center;

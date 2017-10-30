@@ -18,14 +18,6 @@
 </head>
 <body>
 
-           <!-- <div class="navigation-bar">
-                <ul>
-                    <a href="javascript:userView();"><li>1</li></a>
-                    <a href="javascript:proyectView();"><li>2</li></a>
-                    <a href="javascript:listView();"><li>3</li></a>   
-                    <a href="javascript:messageView();"><li>4</li></a>                
-                </ul>
-            </div> -->
     <div id="app">
         @yield('content')
     </div>

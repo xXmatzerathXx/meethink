@@ -62,6 +62,9 @@ body{
   margin-top: -40px;
 }
 .navigation-bar{
+  &:after, &:before{
+    display: none;
+  }
   width: 100%;
   position: relative;
   display: flex;
