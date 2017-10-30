@@ -44,7 +44,7 @@ Route::get('/logout', function () {
 })->name('logout');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/start', 'StartController@start')->name('start');
-Route::get('/steps', 'stepsController@steps')->name('steps');
+Route::get('/steps', 'StepsController@steps')->name('steps');
 Route::any('/user', 'UserController@user')->name('user');
 Route::any('/proyect', 'ProyectController@proyect')->name('proyect');
 Route::any('/list', 'ListController@list')->name('list')->middleware('auth');;
