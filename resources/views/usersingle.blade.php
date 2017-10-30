@@ -12,6 +12,7 @@
 <div class="user">
 <img class="user-big" src="{{asset('img/icons/nav/usuario.svg')}}">
 <h3>{{$user}}</h3>
+<a class="link-portafolio" href="/portafolio/{{$user}}">PORTAFOLIO</a>
   <div class="user-hobbies">
     <h4>Hobbies</h4>
     @foreach ($hobbies as $hobbie)

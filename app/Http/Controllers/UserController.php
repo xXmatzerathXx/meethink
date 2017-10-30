@@ -34,9 +34,9 @@ class UserController extends Controller
         $dataArray = json_decode($data, true);  
         return view('usersingle', ['dataArray' => $dataArray, 'user' => $user  ]);
     }
-    public function portafolio()
+    public function portafolio($user)
     {  
         $proyectos = DB::table('proyecto')->get();
-        return view('portafolio', ['proyectos' => $proyectos]);
+        return view('portafolio', ['proyectos' => $proyectos, 'user' => $user]);
     }
 }

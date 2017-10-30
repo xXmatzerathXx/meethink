@@ -58,7 +58,7 @@ Route::any('/complete', 'InformationController@complete');
 Route::any('/team', 'ProyectController@team');
 Route::any('/usuario/{user}', 'UserController@single');
 Route::any('/evaluacion', 'ProyectController@evaluar');
-Route::any('/portafolio', 'UserController@portafolio');
+Route::any('/portafolio/{user}', 'UserController@portafolio');
 Route::any('/newproyect', 'ProyectController@new')->name('newproyect');
 Route::any('/proyectsingle/{nombreP}', 'ProyectController@single')->name('proyectosingle');
 Route::any('/updatem', 'MessageController@update')->name('updatem');
