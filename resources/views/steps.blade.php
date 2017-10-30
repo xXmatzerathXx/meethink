@@ -39,7 +39,7 @@
       <img src="{{asset('img/images/steps/3.png')}}" alt="Flower">
       <div class="carousel-caption">
           <h3>EVALUA EL DESEMPEÑO DE TU EQUIPO</h3>
-          <p>Al finalizar cada proyecto, califica el desempeñi de tus compañeros con el objetivo de que puedan detectar sus áreas de oportunidad.</p>
+          <p>Al finalizar cada proyecto, califica el desempeño de tus compañeros con el objetivo de que puedan detectar sus áreas de oportunidad</p>
         </div>
       </div>
 
@@ -47,7 +47,7 @@
       <img src="{{asset('img/images/steps/4.png')}}" alt="Flower">
       <div class="carousel-caption">
           <h3>OBTÉN RETROALIMENTACION</h3>
-          <p>Conoce que opinan tus compañeros de ti mediante gráficas y estadisticas que te servirán para identificar en que estás fallando y que puedes mejorar.</p>
+          <p>Conoce que opinan tus compañeros de ti mediante gráficas y estadísticas que te servirán para identificar en qué estás fallando y qué puedes mejorar</p>
         </div>
       </div>
 
