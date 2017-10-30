@@ -7,14 +7,14 @@
 @foreach ($users as $user)
   @if ($user != $me )
     <li>
-    <div class="left">
-      <img src="{{asset('img/icons/nav/usuario.svg')}}">
-    </div>
-    <div class="right">
-      <a class="usuario" href="/usuario/{{$user}}"><p>{{$user}}</p></a>
-      <a href="#" class="mensaje" onClick="nuevo('{{$user}}')"><img src="{{asset('img/icons/nav/sobrecerrado.svg')}}"></a>
-      <a href="portafolio" class="portfolio">PORTAFOLIO</a>
-    </div>
+      <div class="left">
+        <a class="usuario" href="/usuario/{{$user}}"><img src="{{asset('img/icons/nav/usuario.svg')}}"></a>
+      </div>
+      <div class="right">
+        <a class="usuario" href="/usuario/{{$user}}"><p>{{$user}}</p></a>
+        <a href="#" class="mensaje" onClick="nuevo('{{$user}}')"><img src="{{asset('img/icons/nav/sobrecerrado.svg')}}"></a>
+        <a href="portafolio" class="portfolio">PORTAFOLIO</a>
+      </div>
     </li>
   @endif
 @endforeach

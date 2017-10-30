@@ -546,9 +546,39 @@ form.form-info{
 }
 .member{
   display: none;
+  font-size: 11px;
+  margin-bottom: 30px;
+  img{
+    display: inline-block;
+    width: 100px;
+  }
+  p{
+    display: inline-block;
+    margin-left: 5px;
+  }
+  .accept{
+    background-image: url(/img/icons/nav/palomita.svg);
+    width: 50px;
+    height: 33px;
+    vertical-align: middle;
+    display: inline-block;
+    -webkit-appearance: none;
+    &:checked{
+      background-image: url(/img/icons/nav/palomitac.svg);    }
+  }
+  .delete{
+    background-image: url(/img/icons/nav/tache.svg);
+    width: 50px;
+    display: inline-block;
+    height: 33px;
+    vertical-align: middle;
+  }
+  
 }
 .m-bottom{
+  margin: 0 auto;
   margin-bottom: 30px!important;
+  
 }
 
 .proyectos-list{
@@ -716,4 +746,10 @@ form.form-info{
 form.proyectosingle{
   width: 90%;
   margin: 0 auto;
+  button{
+    @include link();
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  margin-top: 50px;
 }

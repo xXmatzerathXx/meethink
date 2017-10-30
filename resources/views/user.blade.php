@@ -16,14 +16,14 @@
   <div class="virtudes">
     <h4>Virtudes</h4>
     @foreach ($virtudes as $virtud)
-    <div class="virtud {{$virtud}}"></div>
+    <a href="/actividad"><div class="virtud {{$virtud}}"></div></a>
     @endforeach
     <div class="content-p"><a class="link" href="/virtudessingle">VER</a></div>
   </div>
   <div class="skills">
     <h4>Habilidades</h4>
     @foreach ($skills as $skill)
-    <a href="/activdad"><div class="skill {{$skill}}"></div></a>
+    <a href="/actividad"><div class="skill {{$skill}}"></div></a>
     @endforeach
     <div class="content-p"><a class="link" href="/habilidadessingle">VER</a></div>
   </div>

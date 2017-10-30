@@ -9380,9 +9380,43 @@ form.form-info button {
 
 .member {
   display: none;
+  font-size: 11px;
+  margin-bottom: 30px;
+}
+
+.member img {
+  display: inline-block;
+  width: 100px;
+}
+
+.member p {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.member .accept {
+  background-image: url(/img/icons/nav/palomita.svg);
+  width: 50px;
+  height: 33px;
+  vertical-align: middle;
+  display: inline-block;
+  -webkit-appearance: none;
+}
+
+.member .accept:checked {
+  background-image: url(/img/icons/nav/palomitac.svg);
+}
+
+.member .delete {
+  background-image: url(/img/icons/nav/tache.svg);
+  width: 50px;
+  display: inline-block;
+  height: 33px;
+  vertical-align: middle;
 }
 
 .m-bottom {
+  margin: 0 auto;
   margin-bottom: 30px !important;
 }
 
@@ -9608,5 +9642,24 @@ form.form-info button {
 form.proyectosingle {
   width: 90%;
   margin: 0 auto;
+  margin-top: 50px;
+}
+
+form.proyectosingle button {
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  padding: 6px 0;
+  border-radius: 5px;
+  height: 39px;
+  font-family: gn;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 

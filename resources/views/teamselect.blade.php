@@ -20,7 +20,7 @@ $me = Auth::user()->name;
     <h3>TU EQUIPO IDEAL</h3>
     @foreach ($users as $user)
       @if ($user != $me)
-      <div class="member"><p>{{$user}}<input name="member[]" type="checkbox" value="{{$user}}"><span class="delete">X</span></div>
+      <div class="member"><img src="{{asset('img/icons/nav/usuario.svg')}}"><p>{{$user}}<input class="accept" name="member[]" type="checkbox" value="{{$user}}"><span class="delete"></span></div>
       @endif
     @endforeach
     <button type="submit">Siguiente</button>
