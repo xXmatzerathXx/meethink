@@ -12,18 +12,20 @@
     <p class="mensaje-t">{{$mensaje->mensaje}}</p>
     {!! Form::open(['url' => 'updatem', 'class' => 'form-info']) !!}
     <input value="{{$mensaje->id}}" name="id" type="hidden">
-    <button type="submit" name="action" value="delete">Borrar</button><button name="action" value="close" type="submit">Cerrar</button>
+    <button type="submit" name="action" value="delete">Borrar</button>
+    <button name="action" value="close" type="submit">Cerrar</button>
   {!! Form::close() !!}
   </div>
 </div>
 @endif
 
-@if ($mensaje->tipo == 'solicitud')
+@if ($mensaje->tipo == 'evaluación')
 <div class="mensaje-modal mensaje-modal-{{$mensaje->id}}">
   <div class="el-mensaje">
     <p class="mensaje-t">{{$mensaje->mensaje}}</p>
     {!! Form::open(['url' => 'evaluacion', 'class' => 'form-info']) !!}
     <input value="{{$mensaje->proyectid}}" name="id" type="hidden">
+    <input value="{{$mensaje->id}}" name="idm" type="hidden">
     <button type="submit" name="action" value="delete">Evaluar</button>
     <button name="action" value="close" type="submit">Cerrar</button>
   {!! Form::close() !!}  </div>

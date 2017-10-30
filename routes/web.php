@@ -86,14 +86,18 @@ Route::any('/done', function () {
     $team = $proyecto[0]['team'];
     $team = json_decode($team, true);
     $pid =  $proyecto[0]['id'];
-    foreach ($team as $user){
-        DB::table('mensajes')->insert([
-            'destinatario' => $user,
-            'remitente' => $name,
-            'mensaje' => 'Evalua el proyecto '.$proyecto[0]['nombre'],
-            'tipo' => 'Evaluación',
-            'proyectid' => $pid,
-        ]);
+    if ($proyecto[0]['status'] == "active"){
+        foreach ($team as $user){
+            if ($user != $name){
+                DB::table('mensajes')->insert([
+                    'destinatario' => $user,
+                    'remitente' => $name,
+                    'mensaje' => 'Evalua el proyecto '.$proyecto[0]['nombre'],
+                    'tipo' => 'evaluación',
+                    'proyectid' => $pid,
+                ]);
+            }
+        }
     }
     DB::table('proyecto')->where('id', '=', "$id")->update([
         'status'=>'done',

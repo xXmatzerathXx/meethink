@@ -68,6 +68,10 @@ class ProyectController extends Controller
 
     public function evaluar()
     {
+        if (isset($_POST['idm'])) {
+            $idm = ($_POST['idm']);
+            DB::table('mensajes')->where('id', '=', "$idm")->delete();
+        } 
         $id = $_POST['id'];  
         $proyecto = DB::table('proyecto')->where('id', '=', "$id")->get();
         $proyecto = json_decode($proyecto, true);
