@@ -644,6 +644,10 @@ form.form-info{
   }
 }
 
+.evaluar-boton{
+  @include link;
+  margin-top: 15px;
+}
 //single-proyect
 
 .single-proyect{
@@ -659,6 +663,13 @@ form.form-info{
   width: 90%;
   display: block;
   margin: 0 auto;
+  a{
+    @include link;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
   .user{
     img{
       width: 100px;
@@ -670,10 +681,12 @@ form.form-info{
       display: inline-block;
       margin: 0;
     }
+    
   }
   .metricas{
     padding: 0;
     list-style: none;
+    float: left;
     li{
       float: left;
       width: 100%;

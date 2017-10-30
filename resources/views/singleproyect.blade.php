@@ -14,7 +14,7 @@ $teams = json_decode($proyect[0]["team"], true);
 <div class="content-app">
 <div class="single-proyect">
     <h2>{{$nombre}}</h2>
-    <h3>Descripcion:</h3>
+    <h3>Descripción:</h3>
     <p>{{$descripcion}}</p>
     <h3>Equipo:</h3>
     @foreach ($teams as $team)

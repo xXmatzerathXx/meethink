@@ -59,21 +59,47 @@ Route::any('/team', 'ProyectController@team');
 Route::any('/usuario/{user}', 'UserController@single');
 Route::any('/evaluacion', 'ProyectController@evaluar');
 Route::any('/portafolio', 'UserController@portafolio');
-Route::any('newproyect', 'ProyectController@new')->name('newproyect');
-Route::any('proyectsingle/{nombreP}', 'ProyectController@single')->name('proyectosingle');
-Route::any('updatem', 'MessageController@update')->name('updatem');
-Route::any('loading', 'ListController@loading')->name('loading');
-Route::get('virtudessingle', function () {
+Route::any('/newproyect', 'ProyectController@new')->name('newproyect');
+Route::any('/proyectsingle/{nombreP}', 'ProyectController@single')->name('proyectosingle');
+Route::any('/updatem', 'MessageController@update')->name('updatem');
+Route::any('/loading', 'ListController@loading')->name('loading');
+Route::get('/virtudessingle', function () {
     return view('virtudes');
 });
-Route::get('habilidadessingle', function () {
+Route::get('/habilidadessingle', function () {
     return view('hablilidades');
 });
-Route::get('actividad', function () {
+Route::get('/actividad', function () {
     return view('hobbie');
 });
-Route::get('hobbi', function () {
+Route::get('/hobbi', function () {
     return view('hobb');
 });
+Route::any('/done', function () {
+    $name = Auth::user()->name;
+    $data = DB::table('user_information')->where('user', '=', "$name")->get();
+    $dataArray = json_decode($data, true);  
+    $status = $dataArray[0]['status']; 
+    $id = $_POST['id'];
+    $proyecto = DB::table('proyecto')->where('id', '=', "$id")->get(); 
+    $proyecto = json_decode($proyecto, true); 
+    $team = $proyecto[0]['team'];
+    $team = json_decode($team, true);
+    $pid =  $proyecto[0]['id'];
+    foreach ($team as $user){
+        DB::table('mensajes')->insert([
+            'destinatario' => $user,
+            'remitente' => $name,
+            'mensaje' => 'Evalua el proyecto '.$proyecto[0]['nombre'],
+            'tipo' => 'Evaluación',
+            'proyectid' => $pid,
+        ]);
+    }
+    DB::table('proyecto')->where('id', '=', "$id")->update([
+        'status'=>'done',
+    ]);
+    return view('home', ['dataArray' => $dataArray, 'proyecto'=>$proyecto ]);
+});
+
 
 

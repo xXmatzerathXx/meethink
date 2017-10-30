@@ -3,7 +3,7 @@
 @php
   $user = Auth::user()->name;
   $members = json_decode($proyecto[0]["team"], true);
-@endphp
+@endphp 
 @section('content')
 <div class="evaluacion">
   <h2>EVALUACIÓN</h2>
@@ -13,11 +13,22 @@
   <ul class="metricas">
     <li class="each">
       <p>Edición</p>
-      
+      <div class="controles"><span class="mas"><img src="{{asset('img/icons/nav/mas.svg')}}"></span><input type="number" value="0" max="1" min="0" class="total"><span class="menos"><img src="{{asset('img/icons/nav/menos.svg')}}"></span></div>
+    </li>
+    <li class="each">
+      <p>Arte</p>
+      <div class="controles"><span class="mas"><img src="{{asset('img/icons/nav/mas.svg')}}"></span><input type="number" value="0" max="1" min="0" class="total"><span class="menos"><img src="{{asset('img/icons/nav/menos.svg')}}"></span></div>
+    </li>
+    <li class="each">
+      <p>Empatía</p>
       <div class="controles"><span class="mas"><img src="{{asset('img/icons/nav/mas.svg')}}"></span><input type="number" value="0" max="1" min="0" class="total"><span class="menos"><img src="{{asset('img/icons/nav/menos.svg')}}"></span></div>
     </li>
   </ul>
   @endforeach
+  {!! Form::open(['url' => 'done', 'class' => 'form-info']) !!}
+    <input type="hidden" name="id" value="{{$proyecto[0]["id"]}}">
+    <button type="submit">LISTO</button>
+  {!! Form::close() !!}
 </div>
 @endsection
 

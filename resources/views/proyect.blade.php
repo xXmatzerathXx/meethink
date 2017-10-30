@@ -9,7 +9,7 @@
 <ul class="proyect-list m-bottom">
 @foreach ($proyectos as $proyecto)
 @php ($members = json_decode($proyecto->team, true))
-@if (in_array($user, $members))
+@if (in_array($user, $members) && $proyecto->status == 'active')
 <li>
 <div class="left">
   <img src="{{asset('img/icons/nav/usuario.svg')}}">
