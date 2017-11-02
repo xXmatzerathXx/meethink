@@ -30,8 +30,8 @@
   display: flex;
   left: 0;
   top: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#09203f), to(#537895));
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 .global-container.white {
@@ -48,8 +48,8 @@
   display: flex;
   left: 0;
   top: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#09203f), to(#537895));
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 .global-container-r.white {
@@ -8535,8 +8535,8 @@ button.close {
   display: flex;
   left: 0;
   top: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#09203f), to(#537895));
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 .global-container.white {
@@ -8553,8 +8553,8 @@ button.close {
   display: flex;
   left: 0;
   top: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#09203f), to(#537895));
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 .global-container-r.white {
@@ -8859,8 +8859,8 @@ body {
 
 #myCarousel .carousel-inner .item:after {
   content: "";
-  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#09203f), to(#537895));
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   height: 100%;
   width: 100%;
   position: absolute;

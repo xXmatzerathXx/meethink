@@ -61,7 +61,7 @@ $panel-default-heading-bg: #fff;
   display: flex;
   left: 0;
   top: 0;
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   &.white{
     background: white;
     background-image: none;
@@ -75,7 +75,7 @@ $panel-default-heading-bg: #fff;
   display: flex;
   left: 0;
   top: 0;
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   &.white{
     background: white;
     background-image: none;
@@ -126,7 +126,7 @@ input::placeholder {
   font-size: 18px;
 }
 
-$bg: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+$bg: linear-gradient(to top, #09203f 0%, #537895 100%);
 
 
 @keyframes bounceIn {
