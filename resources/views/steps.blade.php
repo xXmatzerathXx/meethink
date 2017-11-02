@@ -38,7 +38,7 @@
       <div class="item">
       <img src="{{asset('img/images/steps/3.png')}}" alt="Flower">
       <div class="carousel-caption">
-          <h3>EVALUA EL DESEMPEÑO DE TU EQUIPO</h3>
+          <h3>EVALÚA EL DESEMPEÑO DE TU EQUIPO</h3>
           <p>Al finalizar cada proyecto, califica el desempeño de tus compañeros con el objetivo de que puedan detectar sus áreas de oportunidad</p>
         </div>
       </div>
