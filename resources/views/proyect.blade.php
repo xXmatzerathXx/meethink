@@ -10,7 +10,7 @@
 @foreach ($proyectos as $proyecto)
 @php ($members = json_decode($proyecto->team, true))
 @if (in_array($user, $members) && $proyecto->status == 'active')
-<li>
+<li class="wow fadeInLeft">
 <div class="left">
   <img src="{{asset('img/icons/nav/usuario.svg')}}">
 </div>
@@ -41,7 +41,7 @@
 @foreach ($proyectos as $proyecto)
 @php ($members = json_decode($proyecto->team, true))
 @if (!in_array($user, $members))
-<li>
+<li class="wow fadeInLeft">
 <div class="left">
   <img src="{{asset('img/icons/nav/usuario.svg')}}">
 </div>

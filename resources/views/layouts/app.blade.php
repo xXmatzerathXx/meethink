@@ -13,6 +13,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/all.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/animate.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('head')
 </head>

@@ -4,19 +4,21 @@
 @include ('nav-complete')
 
 <ul class="list-users">
+  @php($flag=0.1)
 @foreach ($users as $user)
   @if ($user != $me )
-    <li>
+    <li class="wow fadeInUp" data-wow-delay="{{$flag}}s" >
       <div class="left">
         <a class="usuario" href="/usuario/{{$user}}"><img src="{{asset('img/icons/nav/usuario.svg')}}"></a>
       </div>
       <div class="right">
         <a class="usuario" href="/usuario/{{$user}}"><p>{{$user}}</p></a>
         <a href="#" class="mensaje" onClick="nuevo('{{$user}}')"><img src="{{asset('img/icons/nav/sobrecerrado.svg')}}"></a>
-        <a href="portafolio" class="portfolio">PORTAFOLIO</a>
+        <a href="/portafolio/{{$user}}" class="portfolio">PORTAFOLIO</a>
       </div>
     </li>
   @endif
+  @php($flag + 0.1)
 @endforeach
 </ul>
 

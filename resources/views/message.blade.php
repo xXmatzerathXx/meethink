@@ -3,7 +3,7 @@
 @include ('nav-complete')
 <div class="bandeja-entrada">
 @foreach ($mensajes as $mensaje)
-<div class="mensaje">
+<div class="mensaje wow fadeInLeft">
 <p onCLick="modal('{{$mensaje->id}}')"><span class="{{$mensaje->estado}}"></span> {{$mensaje->tipo}}<p>
 </div>
 @if ($mensaje->tipo == 'mensaje')

@@ -4,10 +4,10 @@
 <ul class="nav navbar-nav navbar-right navigation-bar">
     @guest   
         @else
-        <a href="list" class="list"><li><img src="{{asset('img/icons/nav/agenda.svg')}}"></li></a>   
-        <a href="proyect" class="proyect"><li><img src="{{asset('img/icons/nav/equipos.svg')}}"></li></a>
-        <a href="message" class="message"><li><img src="{{asset('img/icons/nav/bandejaentrada3.svg')}}"></li></a> 
-        <a href="message" class="search"><li><img src="{{asset('img/icons/nav/buscar.svg')}}"></li></a> 
+        <a href="list" class="list wow fadeInDown" data-wow-delay="0.0s"><li><img src="{{asset('img/icons/nav/agenda.svg')}}"></li></a>   
+        <a href="proyect" class="proyect wow fadeInDown" data-wow-delay="0.1s"><li><img src="{{asset('img/icons/nav/equipos.svg')}}"></li></a>
+        <a href="message" class="message wow fadeInDown" data-wow-delay="0.2s"><li><img src="{{asset('img/icons/nav/bandejaentrada3.svg')}}"></li></a> 
+        <a href="message" class="search wow fadeInDown" data-wow-delay="0.3s"><li><img src="{{asset('img/icons/nav/buscar.svg')}}"></li></a> 
     @endguest
 </ul>
 <div class="content-app">

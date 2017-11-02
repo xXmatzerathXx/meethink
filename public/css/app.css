@@ -94,6 +94,67 @@ input::placeholder {
   font-size: 18px;
 }
 
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  70% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  70% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounceIn;
+          animation-name: bounceIn;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -8538,6 +8599,43 @@ input::placeholder {
   font-size: 18px;
 }
 
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  70% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounceIn;
+          animation-name: bounceIn;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
 .link {
   border: 2px solid white;
   text-align: center;
@@ -8587,8 +8685,11 @@ input::placeholder {
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#09203f), to(#537895));
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
 }
 
 .content-app {
@@ -8856,7 +8957,7 @@ body {
 }
 
 .user .user-big {
-  max-width: 300px;
+  max-width: 175px;
   margin: 0 auto;
   display: block;
   margin-bottom: 30px;
@@ -9092,6 +9193,9 @@ form.form-info button {
   position: fixed;
   bottom: 30px;
   right: 15px;
+  -webkit-box-shadow: 0px 6px 25px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 6px 25px -2px rgba(0, 0, 0, 0.75);
+  border-radius: 35px;
 }
 
 .boton-proyecto a {
@@ -9209,8 +9313,9 @@ form.form-info button {
 }
 
 .list-users li .left {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  margin-right: 7.5px;
+  height: 75px;
   float: left;
 }
 
@@ -9445,7 +9550,8 @@ form.form-info button {
 }
 
 .proyectos-list .proyect-list li .left {
-  width: 100px;
+  width: 70px;
+  margin-right: 7.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

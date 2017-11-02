@@ -38,6 +38,9 @@ $("input:checkbox").click(function(){
  if ($("input:checkbox:checked").length > 4){
     $('button').prop('disabled', false);
  }
+ $("input:checkbox").click(function(){
+  $(this).next('label').toggleClass('bounce');
+});
 });
 </script>
 @endsection

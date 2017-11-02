@@ -39,6 +39,9 @@ $("input:checkbox").click(function(){
     $('button').prop('disabled', false);
  }
 });
+$("input:checkbox").click(function(){
+  $(this).next('label').toggleClass('bounce');
+});
 </script>
 @endsection
 

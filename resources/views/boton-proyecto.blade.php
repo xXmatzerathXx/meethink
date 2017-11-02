@@ -1,3 +1,3 @@
-<div class="boton-proyecto">
+<div class="boton-proyecto wow bounceIn">
   <a href="newproyect"></a>
 </div>
