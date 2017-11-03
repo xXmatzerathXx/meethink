@@ -9,7 +9,7 @@
   @if ($user != $me )
     <li class="wow fadeInUp" data-wow-delay="{{$flag}}s" >
       <div class="left">
-        <a class="usuario" href="/usuario/{{$user}}"><img src="{{asset('img/icons/nav/usuario.svg')}}"></a>
+        <a class="usuario @if ($user=='Brandon') brandon @endif" href="/usuario/{{$user}}"><img src="{{asset('img/icons/nav/usuario.svg')}}"></a>
       </div>
       <div class="right">
         <a class="usuario" href="/usuario/{{$user}}"><p>{{$user}}</p></a>

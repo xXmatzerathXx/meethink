@@ -234,6 +234,24 @@ body{
 
 //USUARIO
 .user{
+  span.brandon{
+    display: block;
+    position: relative;
+    img{
+      visibility: hidden;
+    }
+    &:after{
+      content: "";
+      z-index: 10;
+      position: absolute;
+      height: 100%;width: 100%;
+      top: 0; left: 0;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(/img/brandon.svg);
+    }
+  }
   .user-big {
     max-width: 175px;
     margin: 0 auto;
@@ -430,6 +448,24 @@ form.form-info{
       margin-right: 7.5px;
       height: 75px;
       float: left;
+      a.brandon{
+        display: block;
+        position: relative;
+        img{
+          visibility: hidden;
+        }
+        &:after{
+          content: "";
+          z-index: 10;
+          position: absolute;
+          height: 100%;width: 100%;
+          top: 0; left: 0;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(/img/brandon.svg);
+        }
+      }
     }
     .right{
       float: left;
@@ -479,7 +515,7 @@ form.form-info{
 //PORTAFOLIO
 .portafolio{
   margin-top: 50px;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   display: block;
   h2{
@@ -772,4 +808,19 @@ form.proyectosingle{
     margin-bottom: 30px;
   }
   margin-top: 50px;
+}
+
+.portafolio.brandon{
+  display: flex;
+  flex-wrap: wrap;
+  h3{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  img{
+    width: 20%;
+    align-self: center;
+    margin: 0 2.5%;
+    margin-bottom: 15px;
+  }
 }

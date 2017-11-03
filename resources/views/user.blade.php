@@ -5,7 +5,7 @@
   $me = Auth::user()->name;
 @endphp
 <div class="user">
-<img class="user-big" src="{{asset('img/icons/nav/usuario.svg')}}">
+<span class="@if ($me=='Brandon') brandon @endif"><img class="user-big" src="{{asset('img/icons/nav/usuario.svg')}}"></span>
 <h3>{{Auth::user()->name}}</h3>
 <a class="link-portafolio wow fadeInLeft" href="/portafolio/{{$me}}">PORTAFOLIO</a>
   <div class="user-hobbies">

@@ -8956,6 +8956,29 @@ body {
   margin: 0 auto;
 }
 
+.user span.brandon {
+  display: block;
+  position: relative;
+}
+
+.user span.brandon img {
+  visibility: hidden;
+}
+
+.user span.brandon:after {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/brandon.svg);
+}
+
 .user .user-big {
   max-width: 175px;
   margin: 0 auto;
@@ -9319,6 +9342,29 @@ form.form-info button {
   float: left;
 }
 
+.list-users li .left a.brandon {
+  display: block;
+  position: relative;
+}
+
+.list-users li .left a.brandon img {
+  visibility: hidden;
+}
+
+.list-users li .left a.brandon:after {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/brandon.svg);
+}
+
 .list-users li .right {
   float: left;
   margin-left: 15px;
@@ -9389,7 +9435,7 @@ form.form-info button {
 
 .portafolio {
   margin-top: 50px;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   display: block;
 }
@@ -9809,5 +9855,26 @@ form.proyectosingle button {
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+.portafolio.brandon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portafolio.brandon h3 {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.portafolio.brandon img {
+  width: 20%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0 2.5%;
+  margin-bottom: 15px;
 }
 
