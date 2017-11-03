@@ -8976,7 +8976,7 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/img/brandon.svg);
+  background-image: url(/img/brandon.png);
 }
 
 .user .user-big {
@@ -9362,7 +9362,7 @@ form.form-info button {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/img/brandon.svg);
+  background-image: url(/img/brandon.png);
 }
 
 .list-users li .right {
