@@ -10,7 +10,7 @@
 
 <div class="content-app">
 <div class="user">
-<span class="@if ($user=='Brandon') brandon @endif"><img class="user-big" src="{{asset('img/icons/nav/usuario.png')}}"></span>
+<span class="@if ($user=='Brandon') brandon @endif"><img class="user-big" src="{{asset('img/icons/nav/usuario.svg')}}"></span>
 <h3>{{$user}}</h3>
 <a class="link-portafolio wow fadeInLeft" href="/portafolio/{{$user}}">PORTAFOLIO</a>
   <div class="user-hobbies">
