@@ -9865,16 +9865,176 @@ form.proyectosingle button {
       flex-wrap: wrap;
 }
 
+.portafolio.brandon a {
+  width: 20%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0 2.5%;
+  margin-bottom: 15px;
+}
+
 .portafolio.brandon h3 {
   width: 100%;
   margin-bottom: 15px;
 }
 
 .portafolio.brandon img {
-  width: 20%;
-  -ms-flex-item-align: center;
-      align-self: center;
-  margin: 0 2.5%;
-  margin-bottom: 15px;
+  width: 100%;
+}
+
+.single-act span.single {
+  display: block;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.single-act span.single img {
+  visibility: hidden;
+}
+
+.single-act span.single:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+}
+
+.single-act span.single.arte {
+  background-image: url("/img/icons/hobbies/arte.svg");
+}
+
+.single-act span.single.cine {
+  background-image: url("/img/icons/hobbies/cine.svg");
+}
+
+.single-act span.single.dibujar {
+  background-image: url("/img/icons/hobbies/dibujar.svg");
+}
+
+.single-act span.single.ejercicio {
+  background-image: url("/img/icons/hobbies/ejercicio.svg");
+}
+
+.single-act span.single.escribir {
+  background-image: url("/img/icons/hobbies/escribir.svg");
+}
+
+.single-act span.single.leer {
+  background-image: url("/img/icons/hobbies/leer.svg");
+}
+
+.single-act span.single.musica {
+  background-image: url("/img/icons/hobbies/musica.svg");
+}
+
+.single-act span.single.amigos {
+  background-image: url("/img/icons/hobbies/salirconamigos.svg");
+}
+
+.single-act span.single.teatro {
+  background-image: url("/img/icons/hobbies/teatro.svg");
+}
+
+.single-act span.single.videojuegos {
+  background-image: url("/img/icons/hobbies/videojuegos.svg");
+}
+
+.single-act span.single.compromiso {
+  background-image: url("/img/icons/virtudes/compromiso.svg");
+}
+
+.single-act span.single.empatia {
+  background-image: url("/img/icons/virtudes/empatia.svg");
+}
+
+.single-act span.single.flexibilidad {
+  background-image: url("/img/icons/virtudes/flexibilidad.svg");
+}
+
+.single-act span.single.honradez {
+  background-image: url("/img/icons/virtudes/honradez.svg");
+}
+
+.single-act span.single.liderazgo {
+  background-image: url("/img/icons/virtudes/liderazgo.svg");
+}
+
+.single-act span.single.perseverancia {
+  background-image: url("/img/icons/virtudes/perseverancia.svg");
+}
+
+.single-act span.single.puntualidad {
+  background-image: url("/img/icons/virtudes/responsabilidad.svg");
+}
+
+.single-act span.single.responsabilidad {
+  background-image: url("/img/icons/virtudes/socializacion.svg");
+}
+
+.single-act span.single.socializacion {
+  background-image: url("/img/icons/virtudes/trabajoenequipo.svg");
+}
+
+.single-act span.single.trabajo {
+  background-image: url("/img/icons/virtudes/socializacion.svg");
+}
+
+.single-act span.single.animacion {
+  background-image: url("/img/icons/habilidades/animacion.svg");
+}
+
+.single-act span.single.diseñoi {
+  background-image: url("/img/icons/habilidades/diseñodeinterfaz.svg");
+}
+
+.single-act span.single.diseñop {
+  background-image: url("/img/icons/habilidades/diseñodepersonaje.svg");
+}
+
+.single-act span.single.edicion {
+  background-image: url("/img/icons/habilidades/edicion.svg");
+}
+
+.single-act span.single.fotografia {
+  background-image: url("/img/icons/habilidades/fotografia.svg");
+}
+
+.single-act span.single.ilustracion {
+  background-image: url("/img/icons/habilidades/ilustracion.svg");
+}
+
+.single-act span.single.investigacion {
+  background-image: url("/img/icons/habilidades/investigacion.svg");
+}
+
+.single-act span.single.modelado {
+  background-image: url("/img/icons/habilidades/modelado3d.svg");
+}
+
+.single-act span.single.produccion {
+  background-image: url("/img/icons/habilidades/produccion.svg");
+}
+
+.single-act span.single.programacion {
+  background-image: url("/img/icons/habilidades/programacion.svg");
+}
+
+.proyect-single-b {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+.proyect-single-b h3 {
+  text-align: center;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.proyect-single-b h4 {
+  font-size: 20px;
 }
 

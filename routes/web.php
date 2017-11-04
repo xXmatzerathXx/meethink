@@ -63,6 +63,13 @@ Route::any('/newproyect', 'ProyectController@new')->name('newproyect');
 Route::any('/proyectsingle/{nombreP}', 'ProyectController@single')->name('proyectosingle');
 Route::any('/updatem', 'MessageController@update')->name('updatem');
 Route::any('/loading', 'ListController@loading')->name('loading');
+Route::any('/porta/{proyect}', function ($proyect){
+    return view('proyectosingle', ['proyect' => $proyect]);
+});
+Route::any('/actividad/{hobbie}', function ($hobbie){
+    $hobbie = $hobbie;
+    return view('hobbiesingle', ['hobbie' => $hobbie]);
+});
 Route::get('/virtudessingle', function () {
     return view('virtudes');
 });

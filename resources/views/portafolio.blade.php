@@ -23,14 +23,18 @@
   </ul>
 </div>
 @else
+
+
 <div class="portafolio brandon">
   <h3>Videojuegos:</h3>
-  <img src="{{asset('img/dogscats.png')}}">
-  <img src="{{asset('img/dory.png')}}">
-  <img src="{{asset('img/animatleticos.png')}}">
+  <a href="/porta/dogs"><img src="{{asset('img/dogscats.png')}}"></a>
+  <a href="/porta/dory"><img src="{{asset('img/dory.png')}}"></a>
+  <a href="/porta/anima"><img src="{{asset('img/animatleticos.png')}}"></a>
   <h3>Más:</h3>
-  <img src="{{asset('img/pictour.png')}}">
+  <a href="/porta/picto"><img src="{{asset('img/pictour.png')}}"></a>
 </div>
+
+
 @endif
 
 @endsection
