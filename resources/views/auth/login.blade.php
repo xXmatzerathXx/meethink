@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container login global-container">
+<div class="container login global-container-r">
     <div class="col-xs-12 no-padding flex-v-center">
         <h3>Iniciar Sesión</h3>
         <div class="panel panel-default">
@@ -25,7 +25,7 @@
                     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
 
                         <div class="col-md-12">
-                            <input id="password" placeholder="contraseña" type="password" class="form-control" name="password" required>
+                            <input id="password" placeholder="Contraseña" type="password" class="form-control" name="password" required>
 
                             @if ($errors->has('password'))
                                 <span class="help-block">
