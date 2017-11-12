@@ -30,8 +30,6 @@
   display: flex;
   left: 0;
   top: 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#09203f), to(#537895));
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 .global-container.white {
@@ -48,8 +46,6 @@
   display: flex;
   left: 0;
   top: 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#09203f), to(#537895));
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 .global-container-r.white {
@@ -8535,8 +8531,6 @@ button.close {
   display: flex;
   left: 0;
   top: 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#09203f), to(#537895));
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 .global-container.white {
@@ -8553,8 +8547,6 @@ button.close {
   display: flex;
   left: 0;
   top: 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#09203f), to(#537895));
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 .global-container-r.white {
@@ -10037,4 +10029,26 @@ form.proyectosingle button {
 .proyect-single-b h4 {
   font-size: 20px;
 }
+
+input:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent !important;
+}
+
+/* Firefox 18- */
+
+input:focus::-moz-placeholder {
+  color: transparent !important;
+}
+
+/* Firefox 19+ */
+
+input:focus:-ms-input-placeholder {
+  color: transparent !important;
+}
+
+/* oldIE ;) */
 

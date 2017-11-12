@@ -889,3 +889,8 @@ form.proyectosingle{
     font-size: 20px;
   }
 }
+
+input:focus::-webkit-input-placeholder { color:transparent!important; }
+input:focus:-moz-placeholder { color:transparent!important; } /* Firefox 18- */
+input:focus::-moz-placeholder { color:transparent!important; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { color:transparent!important; } /* oldIE ;) */
