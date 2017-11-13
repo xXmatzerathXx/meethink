@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Pc" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;display:none;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
+</style>
+<path style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+	M313.8,276.4H86.2c-8.4,0-15.2-6.8-15.2-15.2V114.9c0-8.4,6.8-15.2,15.2-15.2h227.7c8.4,0,15.2,6.8,15.2,15.2v146.3
+	C329,269.6,322.2,276.4,313.8,276.4z"/>
+<line style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="200" y1="330.5" x2="200" y2="287.3"/>
+<line style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="200" y1="287.3" x2="200" y2="329.5"/>
+<line style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="135.8" y1="330.5" x2="264.2" y2="330.5"/>
+<path style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+	M312.5,286.8h-225c-14.6,0-26.5-11.9-26.5-26.5V115c0-14.6,11.9-26.5,26.5-26.5h225c14.6,0,26.5,11.9,26.5,26.5v145.3
+	C339,274.9,327.1,286.8,312.5,286.8z"/>
+<g style="display:inline;">
+	<polyline class="st0" points="215.9,230.8 194.1,198.1 172.3,165.4 150.5,198.1 128.7,230.8 	"/>
+	<polyline class="st0" points="265.1,230.8 247.2,204 229.3,177.1 211.5,204 204.7,214 	"/>
+	<circle class="st0" cx="257.8" cy="158.7" r="13.4"/>
+</g>
+<ellipse style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;" cx="200" cy="200" rx="195.5" ry="196.5"/>
+</svg>

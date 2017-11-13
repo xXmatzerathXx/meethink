@@ -14,14 +14,20 @@
     $flag = 0.1;
     @endphp
     @foreach ($hobbies as $hobbie)
-      <a href="@if ($me=='Brandon') /actividad/{{$hobbie}} @else /actividad @endif" class="wow fadeInUp" data-wow-delay="{{$flag}}s"><div class="hobbie {{$hobbie}}"></div></a>
+      <a href="@if ($me=='Brandon') /actividad/{{$hobbie}} @else /actividad @endif" class="wow fadeInUp" data-wow-delay="{{$flag}}s"><div class="hobbie {{$hobbie}}">
+      <img src="/img/cuadrado.png">  
+      </div></a>
     @php($flag = $flag + 0.1)
     @endforeach
   </div>
   <div class="virtudes">
     <h4 class="wow fadeInLeft" data-wow-delay="0.5s">Virtudes</h4>
     @foreach ($virtudes as $virtud)
-    <a href="@if ($me=='Brandon') /actividad/{{$virtud}} @else /actividad @endif" class="wow fadeInUp" data-wow-delay="{{$flag}}s"><div class="virtud {{$virtud}}"></div></a>
+    <a href="@if ($me=='Brandon') /actividad/{{$virtud}} @else /actividad @endif" class="wow fadeInUp" data-wow-delay="{{$flag}}s">
+    <div class="virtud {{$virtud}}">
+      <img src="/img/cuadrado.png">  
+    </div>
+  </a>
     @php($flag = $flag + 0.1)
     @endforeach
     <div class="content-p wow fadeInUp"><a class="link" href="/virtudessingle">VER</a></div>
@@ -29,7 +35,10 @@
   <div class="skills">
     <h4 class="wow fadeInLeft" data-wow-delay="1s">Habilidades</h4>
     @foreach ($skills as $skill)
-    <a href="@if ($me=='Brandon') /actividad/{{$skill}} @else /actividad @endif" class="wow fadeInUp" data-wow-delay="{{$flag}}s"><div class="skill {{$skill}}"></div></a>
+    <a href="@if ($me=='Brandon') /actividad/{{$skill}} @else /actividad @endif" class="wow fadeInUp" data-wow-delay="{{$flag}}s">
+    <div class="skill {{$skill}}">
+     <img src="/img/cuadrado.png">  
+    </div></a>
     @php($flag = $flag + 0.1)
     @endforeach
     <div class="content-p wow fadeInUp"><a class="link" href="/habilidadessingle">VER</a></div>

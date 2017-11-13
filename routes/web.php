@@ -63,6 +63,14 @@ Route::any('/newproyect', 'ProyectController@new')->name('newproyect');
 Route::any('/proyectsingle/{nombreP}', 'ProyectController@single')->name('proyectosingle');
 Route::any('/updatem', 'MessageController@update')->name('updatem');
 Route::any('/loading', 'ListController@loading')->name('loading');
+
+Route::any('/teamselect', function () {
+    $users = $_POST['users'];
+    $nombreP = $_POST['nombreP'];
+    $membersP = $_POST['miembros'];
+    $users = json_decode($users, true);  
+    return view('teamselect', ['users' => $users, 'nombreP' => $nombreP, 'miembros'=> $membersP ]);
+})->name('teamselect');
 Route::any('/porta/{proyect}', function ($proyect){
     return view('proyectosingle', ['proyect' => $proyect]);
 });

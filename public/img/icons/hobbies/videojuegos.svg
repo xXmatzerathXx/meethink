@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Videojuegos" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 600 400" style="enable-background:new 0 0 600 400;" xml:space="preserve">
+	 y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;display:none;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
 </style>
-<g>
-	<path class="st0" d="M219.2,62v10.6c0,10.5,8.5,19.1,19.1,19.1h175.1c10.5,0,19.1,8.5,19.1,19.1v0c0,10.5-8.5,19.1-19.1,19.1H299.6
+<g style="display:inline;">
+	<path class="st0" d="M119.2,62v10.6c0,10.5,8.5,19.1,19.1,19.1h175.1c10.5,0,19.1,8.5,19.1,19.1v0c0,10.5-8.5,19.1-19.1,19.1H199.6
 		v50.8"/>
-	<path class="st0" d="M435.9,209.5c0-29.6-24-53.6-53.6-53.6c-19.3,0-36.2,10.2-45.6,25.4h-72.8c-9.4-15.6-26.5-26.1-46-26.1
+	<path class="st0" d="M335.9,209.5c0-29.6-24-53.6-53.6-53.6c-19.3,0-36.2,10.2-45.6,25.4h-72.8c-9.4-15.6-26.5-26.1-46-26.1
 		c-29.6,0-53.6,24-53.6,53.6c0,1.2,0.1,2.5,0.1,3.7v90.4c0,19.4,15.7,35.1,35.1,35.1h0c11.2,0,21.7-5.4,28.4-14.4l37.9-51.9h68.9
-		l37.9,51.9c6.6,9.1,17.1,14.4,28.4,14.4h0c19.4,0,35.1-15.7,35.1-35.1V209.5L435.9,209.5L435.9,209.5z"/>
-	<circle class="st0" cx="219.9" cy="225.1" r="35.3"/>
-	<circle class="st0" cx="379.4" cy="226.5" r="35.3"/>
-	<circle class="st0" cx="300" cy="225.1" r="12.7"/>
+		l37.9,51.9c6.6,9.1,17.1,14.4,28.4,14.4h0c19.4,0,35.1-15.7,35.1-35.1V209.5L335.9,209.5L335.9,209.5z"/>
+	<circle class="st0" cx="119.9" cy="225.1" r="35.3"/>
+	<circle class="st0" cx="279.4" cy="226.5" r="35.3"/>
+	<circle class="st0" cx="200" cy="225.1" r="12.7"/>
 	<g>
-		<circle class="st0" cx="379.4" cy="212.4" r="4.2"/>
-		<circle class="st0" cx="379.4" cy="240.6" r="4.2"/>
-		<circle class="st0" cx="365.3" cy="226.5" r="4.2"/>
-		<circle class="st0" cx="393.5" cy="226.5" r="4.2"/>
+		<circle class="st0" cx="279.4" cy="212.4" r="4.2"/>
+		<circle class="st0" cx="279.4" cy="240.6" r="4.2"/>
+		<circle class="st0" cx="265.3" cy="226.5" r="4.2"/>
+		<circle class="st0" cx="293.5" cy="226.5" r="4.2"/>
 	</g>
-	<path class="st0" d="M235.4,220.8h-9.9c-0.4-0.5-0.9-1-1.4-1.4v-9.9c0-2.3-1.9-4.2-4.2-4.2s-4.2,1.9-4.2,4.2v9.9
+	<path class="st0" d="M135.4,220.8h-9.9c-0.4-0.5-0.9-1-1.4-1.4v-9.9c0-2.3-1.9-4.2-4.2-4.2s-4.2,1.9-4.2,4.2v9.9
 		c-0.5,0.4-1,0.9-1.4,1.4h-9.9c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2h9.9c0.4,0.5,0.9,1,1.4,1.4v9.9c0,2.3,1.9,4.2,4.2,4.2
-		s4.2-1.9,4.2-4.2v-9.9c0.5-0.4,1-0.9,1.4-1.4h9.9c2.3,0,4.2-1.9,4.2-4.2S237.7,220.8,235.4,220.8z"/>
+		s4.2-1.9,4.2-4.2v-9.9c0.5-0.4,1-0.9,1.4-1.4h9.9c2.3,0,4.2-1.9,4.2-4.2S137.7,220.8,135.4,220.8z"/>
 </g>
-<ellipse class="st1" cx="300" cy="200" rx="195.5" ry="196.5"/>
+<ellipse style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;" cx="200" cy="200" rx="195.5" ry="196.5"/>
 </svg>

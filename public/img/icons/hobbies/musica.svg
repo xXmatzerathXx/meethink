@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Musica" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 600 400" style="enable-background:new 0 0 600 400;" xml:space="preserve">
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;display:none;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
 </style>
-<g>
-	<circle class="st0" cx="366.3" cy="251.8" r="39.8"/>
-	<circle class="st0" cx="209.7" cy="299.7" r="39.8"/>
-	<line class="st0" x1="404.8" y1="60.5" x2="406" y2="248.6"/>
-	<line class="st0" x1="248.2" y1="112.3" x2="404.8" y2="60.5"/>
-	<line class="st0" x1="249.5" y1="300.4" x2="248.2" y2="112.3"/>
-	<line class="st0" x1="248.2" y1="143.8" x2="404.8" y2="92.1"/>
+<g style="display:inline;">
+	<circle class="st0" cx="266.3" cy="251.8" r="39.8"/>
+	<circle class="st0" cx="109.7" cy="299.7" r="39.8"/>
+	<line class="st0" x1="304.8" y1="60.5" x2="306" y2="248.6"/>
+	<line class="st0" x1="148.2" y1="112.3" x2="304.8" y2="60.5"/>
+	<line class="st0" x1="149.5" y1="300.4" x2="148.2" y2="112.3"/>
+	<line class="st0" x1="148.2" y1="143.8" x2="304.8" y2="92.1"/>
 </g>
-<ellipse class="st1" cx="300" cy="200" rx="195.5" ry="196.5"/>
+<ellipse style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;" cx="200" cy="200" rx="195.5" ry="196.5"/>
 </svg>

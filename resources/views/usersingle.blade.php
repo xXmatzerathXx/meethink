@@ -19,14 +19,19 @@
     $flag = 0.1;
     @endphp
     @foreach ($hobbies as $hobbie)
-    <a href="/hobbi" class="wow fadeInUp" data-wow-delay="{{$flag}}s"><div class="hobbie {{$hobbie}}"></div></a>
+    <a href="/hobbi" class="wow fadeInUp" data-wow-delay="{{$flag}}s"><div class="hobbie {{$hobbie}}">
+    <img src="/img/cuadrado.png">  
+      </div></a>
     @php($flag = $flag + 0.1)
     @endforeach
   </div>
   <div class="virtudes">
     <h4 class="wow fadeInLeft">Virtudes</h4>
     @foreach ($virtudes as $virtud)
-    <a href="/hobbi" class="wow fadeInUp" data-wow-delay="{{$flag}}s"><div class="virtud {{$virtud}}"></div></a>
+    <a href="/hobbi" class="wow fadeInUp" data-wow-delay="{{$flag}}s">
+    <div class="virtud {{$virtud}}">
+    <img src="/img/cuadrado.png">  
+    </div></a>
     @php($flag = $flag + 0.1)
     @endforeach
     <div class="content-p wow fadeInUp"><a class="link" href="/habilidadessingle">VER</a></div>
@@ -34,12 +39,15 @@
   <div class="skills">
     <h4 class="wow fadeInLeft">Habilidades</h4>
     @foreach ($skills as $skill)
-    <a href="/hobbi" class="wow fadeInUp" data-wow-delay="{{$flag}}s"><div class="skill {{$skill}}"></div></a>
+    <a href="/hobbi" class="wow fadeInUp" data-wow-delay="{{$flag}}s">
+    <div class="skill {{$skill}}">
+    <img src="/img/cuadrado.png">  
+    </div></a>
     @php($flag = $flag + 0.1)
     @endforeach
     <div class="content-p wow fadeInUp"><a class="link" href="/habilidadessingle">VER</a></div>
   </div>
 </div>
 </div>
-
+@include('boton-proyecto')
 @endsection

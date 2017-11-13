@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Responsabilidad" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 600 400" style="enable-background:new 0 0 600 400;" xml:space="preserve">
+	 y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;display:none;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
 </style>
-<g>
-	<path class="st0" d="M426.4,307.5H173.6c-8.7,0-15.7-7-15.7-15.7V132c0-8.7,7-15.7,15.7-15.7h252.9c8.7,0,15.7,7,15.7,15.7v159.8
-		C442.2,300.5,435.1,307.5,426.4,307.5z"/>
-	<polyline class="st0" points="442.2,155 316.4,205.3 315.5,206.2 	"/>
-	<line class="st0" x1="157.8" y1="155" x2="283.9" y2="205.4"/>
-	<path class="st0" d="M303.9,237.7h-7.7c-6.4,0-11.7-5.2-11.7-11.7v-23.2c0-6.4,5.2-11.7,11.7-11.7h7.7c6.4,0,11.7,5.2,11.7,11.7
-		v23.2C315.5,232.5,310.3,237.7,303.9,237.7z"/>
-	<path class="st0" d="M248.3,115.9V82.3c0-4.3,3.5-7.8,7.8-7.8h87.9c4.3,0,7.8,3.5,7.8,7.8v33.6"/>
-	<path class="st0" d="M261.2,115.9V95.2c0-4.3,3.8-7.8,8.5-7.8h60.6c4.7,0,8.5,3.5,8.5,7.8v20.7"/>
+<g style="display:inline;">
+	<path class="st0" d="M326.4,307.5H73.6c-8.7,0-15.7-7-15.7-15.7V132c0-8.7,7-15.7,15.7-15.7h252.9c8.7,0,15.7,7,15.7,15.7v159.8
+		C342.2,300.5,335.1,307.5,326.4,307.5z"/>
+	<polyline class="st0" points="342.2,155 216.4,205.3 215.5,206.2 	"/>
+	<line class="st0" x1="57.8" y1="155" x2="183.9" y2="205.4"/>
+	<path class="st0" d="M203.9,237.7h-7.7c-6.4,0-11.7-5.2-11.7-11.7v-23.2c0-6.4,5.2-11.7,11.7-11.7h7.7c6.4,0,11.7,5.2,11.7,11.7
+		v23.2C215.5,232.5,210.3,237.7,203.9,237.7z"/>
+	<path class="st0" d="M148.3,115.9V82.3c0-4.3,3.5-7.8,7.8-7.8h87.9c4.3,0,7.8,3.5,7.8,7.8v33.6"/>
+	<path class="st0" d="M161.2,115.9V95.2c0-4.3,3.8-7.8,8.5-7.8h60.6c4.7,0,8.5,3.5,8.5,7.8v20.7"/>
 </g>
-<ellipse class="st1" cx="300" cy="200" rx="195.5" ry="196.5"/>
+<ellipse style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;" cx="200" cy="200" rx="195.5" ry="196.5"/>
 </svg>

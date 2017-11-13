@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Investigacion" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 600 400" style="enable-background:new 0 0 600 400;" xml:space="preserve">
+	 y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;display:none;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#FFFFFF;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st2{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
 </style>
-<g>
-	<circle class="st0" cx="338.5" cy="236" r="48.6"/>
-	<line class="st0" x1="379.9" y1="261.4" x2="426.9" y2="289.6"/>
+<g style="display:inline;">
+	<circle class="st0" cx="228.5" cy="236" r="48.6"/>
+	<line class="st0" x1="269.9" y1="261.4" x2="316.9" y2="289.6"/>
 </g>
-<line class="st0" x1="244.3" y1="171.4" x2="367.9" y2="171.4"/>
-<line class="st1" x1="297.9" y1="214.9" x2="369.9" y2="214.9"/>
-<line class="st0" x1="244.3" y1="214.9" x2="295.9" y2="214.9"/>
-<line class="st1" x1="297.9" y1="258.3" x2="370.9" y2="258.3"/>
-<line class="st0" x1="244.3" y1="258.3" x2="294.9" y2="258.3"/>
-<path class="st0" d="M392.2,321.6H219.9c-3.6,0-6.4-2.9-6.4-6.4V84.8c0-3.6,2.9-6.4,6.4-6.4h116.7c2.2,0,4.3,0.9,5.9,2.4l53.6,52.4
-	c1.6,1.6,2.5,3.8,2.5,6v175.9C398.7,318.7,395.8,321.6,392.2,321.6z"/>
-<polyline class="st0" points="398.1,135.7 343.4,135.7 340.1,135.7 340.1,79.7 "/>
-<ellipse class="st2" cx="310.2" cy="200" rx="195.5" ry="196.5"/>
+<line style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="134.3" y1="171.4" x2="257.9" y2="171.4"/>
+<line style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="187.9" y1="214.9" x2="259.9" y2="214.9"/>
+<line style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="134.3" y1="214.9" x2="185.9" y2="214.9"/>
+<line style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="187.9" y1="258.3" x2="260.9" y2="258.3"/>
+<line style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="134.3" y1="258.3" x2="184.9" y2="258.3"/>
+<path style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+	M282.2,321.6H109.9c-3.6,0-6.4-2.9-6.4-6.4V84.8c0-3.6,2.9-6.4,6.4-6.4h116.7c2.2,0,4.3,0.9,5.9,2.4l53.6,52.4
+	c1.6,1.6,2.5,3.8,2.5,6v175.9C288.7,318.7,285.8,321.6,282.2,321.6z"/>
+<polyline style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="
+	288.1,135.7 233.4,135.7 230.1,135.7 230.1,79.7 "/>
+<ellipse style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;" cx="200.2" cy="200" rx="195.5" ry="196.5"/>
 </svg>

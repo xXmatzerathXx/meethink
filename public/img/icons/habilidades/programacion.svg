@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Programacion" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 600 400" style="enable-background:new 0 0 600 400;" xml:space="preserve">
+	 y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;display:none;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#FFFFFF;stroke-width:5.6244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
 </style>
-<g>
-	<path class="st0" d="M423.3,306.5H197c-8.6,0-15.5-6.9-15.5-15.5V109c0-8.6,6.9-15.5,15.5-15.5h226.3c8.6,0,15.5,6.9,15.5,15.5v182
-		C438.8,299.6,431.9,306.5,423.3,306.5z"/>
-	<polyline class="st0" points="328.1,208.2 302.4,234.1 328.1,260 	"/>
-	<circle class="st0" cx="214.4" cy="126.4" r="10.8"/>
-	<circle class="st0" cx="248" cy="126.4" r="10.8"/>
-	<circle class="st0" cx="281.5" cy="126.4" r="10.8"/>
-	<polyline class="st0" points="380.2,208.2 405.9,234.1 380.2,260 	"/>
-	<line class="st0" x1="181.5" y1="160.1" x2="438.8" y2="160.1"/>
-	<path class="st0" d="M315,181.5"/>
-	<line class="st0" x1="366.4" y1="192.2" x2="343.7" y2="274.8"/>
+<g style="display:inline;">
+	<path class="st0" d="M313.3,306.5H87c-8.6,0-15.5-6.9-15.5-15.5V109c0-8.6,6.9-15.5,15.5-15.5h226.3c8.6,0,15.5,6.9,15.5,15.5v182
+		C328.8,299.6,321.9,306.5,313.3,306.5z"/>
+	<polyline class="st0" points="218.1,208.2 192.4,234.1 218.1,260 	"/>
+	<circle class="st0" cx="104.4" cy="126.4" r="10.8"/>
+	<circle class="st0" cx="138" cy="126.4" r="10.8"/>
+	<circle class="st0" cx="171.5" cy="126.4" r="10.8"/>
+	<polyline class="st0" points="270.2,208.2 295.9,234.1 270.2,260 	"/>
+	<line class="st0" x1="71.5" y1="160.1" x2="328.8" y2="160.1"/>
+	<path class="st0" d="M205,181.5"/>
+	<line class="st0" x1="256.4" y1="192.2" x2="233.7" y2="274.8"/>
 </g>
-<ellipse class="st1" cx="310.2" cy="200" rx="195.5" ry="196.5"/>
+<ellipse style="display:inline;fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;" cx="200.2" cy="200" rx="195.5" ry="196.5"/>
 </svg>

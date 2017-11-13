@@ -8772,6 +8772,18 @@ body {
   width: 100%;
 }
 
+.user-hobbies a,
+.virtudes a,
+.skills a {
+  width: 18%;
+}
+
+.user-hobbies a img,
+.virtudes a img,
+.skills a img {
+  max-width: 100%;
+}
+
 .user-menu {
   padding: 5px 0;
   background-color: rgba(255, 255, 255, 0.9);
@@ -9058,9 +9070,6 @@ form.form-info button {
 }
 
 .hobbie {
-  width: 20%;
-  height: 50px;
-  width: 50px;
   background-position: center;
   background-size: cover;
   display: inline-block;
@@ -9107,9 +9116,6 @@ form.form-info button {
 }
 
 .skill {
-  width: 20%;
-  height: 50px;
-  width: 50px;
   background-position: center;
   background-size: cover;
   display: inline-block;
@@ -9156,9 +9162,6 @@ form.form-info button {
 }
 
 .virtud {
-  height: 50px;
-  width: 20%;
-  width: 50px;
   background-position: center;
   background-size: cover;
   display: inline-block;
@@ -9207,9 +9210,9 @@ form.form-info button {
 .boton-proyecto {
   position: fixed;
   bottom: 30px;
-  right: 15px;
-  -webkit-box-shadow: 0px 6px 25px -2px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 6px 25px -2px rgba(0, 0, 0, 0.75);
+  right: 2.5%;
+  -webkit-box-shadow: 0px 6px 20px 2px rgba(0, 0, 0, 0.85);
+          box-shadow: 0px 6px 20px 2px rgba(0, 0, 0, 0.85);
   border-radius: 35px;
 }
 

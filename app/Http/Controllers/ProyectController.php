@@ -42,6 +42,7 @@ class ProyectController extends Controller
         $membersP = $_POST['proyectMembers'];
         $tagsP = $_POST['proyectTags'];
         $users = DB::table('users')->pluck('name');
+        $users = json_encode($users);
         DB::table('proyecto')->insert([
             'nombre' => $nombreP,
             'lider' => $me,
@@ -50,7 +51,7 @@ class ProyectController extends Controller
             'integrantes' => $membersP,
             'tags' => $tagsP
         ]);
-        return view('teamselect', ['users' => $users, 'nombreP' => $nombreP, 'miembros'=> $membersP ]);
+        return view('loading-team', ['users' => $users, 'nombreP' => $nombreP, 'miembros'=> $membersP ]);
     }
     public function single($nombreP)
     {
