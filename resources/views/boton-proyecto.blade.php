@@ -1,5 +1,5 @@
 <div class="boton-proyecto wow bounceIn">
-  <a data-toggle="modal" data-target="#myModal"></a>
+  <button data-toggle="modal" data-target="#myModal"></button>
 </div>
 
 
