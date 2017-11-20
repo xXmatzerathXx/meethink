@@ -33,4 +33,9 @@ class HomeController extends Controller
         }
         return view('home', ['dataArray' => $dataArray]);
     }
+    public function screen()
+    {
+    
+        return view('screen');
+    }
 }

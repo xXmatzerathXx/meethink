@@ -3,6 +3,7 @@
 @php ($me = Auth::user()->name)
 @include ('nav-complete')
 
+<h2 class="titulos">AGENDA</h2>
 <ul class="list-users">
   @php($flag=0.1)
 @foreach ($users as $user)

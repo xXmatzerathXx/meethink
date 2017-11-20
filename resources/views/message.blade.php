@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
 @include ('nav-complete')
+<h2 class="titulos">MENSAJES</h2>
 <div class="bandeja-entrada">
 @foreach ($mensajes as $mensaje)
 <div class="mensaje wow fadeInLeft">

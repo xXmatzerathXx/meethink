@@ -47,7 +47,7 @@
       <img src="{{asset('img/images/steps/4.png')}}" alt="Flower">
       <div class="carousel-caption">
           <h3>OBTÉN RETROALIMENTACIÓN</h3>
-          <p>Conoce que opinan tus compañeros de ti mediante gráficas y estadísticas que te servirán para identificar en qué estás fallando y qué puedes mejorar</p>
+          <p>Conoce qué opinan tus compañeros de ti mediante gráficas y estadísticas que te servirán para identificar en qué estás fallando y qué puedes mejorar</p>
         </div>
       </div>
 

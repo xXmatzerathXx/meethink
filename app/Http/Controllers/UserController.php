@@ -39,4 +39,8 @@ class UserController extends Controller
         $proyectos = DB::table('proyecto')->get();
         return view('portafolio', ['proyectos' => $proyectos, 'user' => $user]);
     }
+    public function buscar()
+    {  
+        return view('busqueda');
+    }
 }

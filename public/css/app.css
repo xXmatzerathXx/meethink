@@ -8711,6 +8711,8 @@ body {
 }
 
 .navigation-bar {
+  -webkit-box-shadow: 0px -58px 45px 78px rgba(0, 0, 0, 0.42);
+          box-shadow: 0px -58px 45px 78px rgba(0, 0, 0, 0.42);
   width: 100%;
   position: relative;
   display: -webkit-box;
@@ -8739,18 +8741,18 @@ body {
   border-bottom: 3px solid white;
 }
 
-.navigation-bar a.active li img {
+.navigation-bar a.active li {
   opacity: 1;
 }
 
 .navigation-bar a li {
   padding: 15px;
+  opacity: 0.3;
 }
 
 .navigation-bar a li img {
   height: 35px;
   width: 35px;
-  opacity: 0.5;
 }
 
 .user-hobbies,
@@ -8838,6 +8840,7 @@ body {
 }
 
 .start-logo img {
+  width: 100%;
   -ms-flex-item-align: center;
       align-self: center;
   max-width: 100%;
@@ -8984,7 +8987,7 @@ body {
 }
 
 .user .user-big {
-  max-width: 175px;
+  max-width: 100%;
   margin: 0 auto;
   display: block;
   margin-bottom: 30px;
@@ -9220,7 +9223,7 @@ form.form-info button {
   height: 75px;
   width: 75px;
   display: block;
-  background-image: url("/img/icons/nav/iconomethink.svg");
+  background-image: url("/img/icons/nav/proyecto2.svg");
   background-position: center;
   background-size: cover;
 }
@@ -9297,7 +9300,7 @@ form.form-info button {
   position: relative;
   padding: 0;
   list-style: none;
-  margin-top: 50px;
+  margin-top: 15px;
   width: 90%;
   display: block;
   margin-left: auto;
@@ -9449,10 +9452,14 @@ form.form-info button {
   margin-bottom: 60px;
 }
 
+.modal-backdrop.in {
+  opacity: 0.8;
+}
+
 .bandeja-entrada {
   width: 80%;
   margin: 0 auto;
-  margin-top: 75px;
+  margin-top: 25px;
 }
 
 .bandeja-entrada .mensaje-modal {
@@ -9461,6 +9468,7 @@ form.form-info button {
   height: 100%;
   width: 100%;
   top: 0;
+  z-index: 10;
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -10054,4 +10062,100 @@ input:focus:-ms-input-placeholder {
 }
 
 /* oldIE ;) */
+
+h2.titulos {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+#myModal {
+  margin-top: 75%;
+}
+
+#myModal .modal-content {
+  background-color: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#myModal .modal-content .modal-body {
+  position: relative;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#myModal .modal-content .modal-body a {
+  display: inline-block;
+  color: white;
+  font-family: gb;
+  text-align: center;
+}
+
+#myModal .modal-content .modal-body a img {
+  width: 75px;
+  height: 75px;
+  -webkit-box-shadow: 0px 6px 20px 2px rgba(0, 0, 0, 0.85);
+          box-shadow: 0px 6px 20px 2px rgba(0, 0, 0, 0.85);
+  border-radius: 50%;
+}
+
+.simulacion {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.pantalla-cell {
+  position: relative;
+}
+
+.pantalla-cell a.lanotificacion {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: -100px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 10;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+
+.pantalla-cell.notificacion a.lanotificacion {
+  top: 0;
+}
+
+.pantalla-cell.notificacion .icono-app {
+  background-image: url(/img/iconocelularnotificacion.svg);
+  background-size: 56px;
+}
+
+.pantalla-cell img {
+  position: relative;
+}
+
+.pantalla-cell .icono-app {
+  width: 60px;
+  background-position: bottom;
+  height: 60px;
+  background-image: url(/img/iconocelular.svg);
+  background-repeat: no-repeat;
+  background-size: 50px;
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+  top: 250px;
+  left: 15px;
+}
 

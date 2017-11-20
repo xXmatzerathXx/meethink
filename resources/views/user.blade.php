@@ -4,8 +4,13 @@
   $virtudes = json_decode($dataArray[0]['virtues'], true);
   $me = Auth::user()->name;
 @endphp
+
+@if ($me=='Brandon') 
+<a  class="simulacion" href="/screen"></a>
+@endif
+
 <div class="user">
-<span class="@if ($me=='Brandon') brandon @endif"><img class="user-big" src="{{asset('img/icons/nav/usuario.svg')}}"></span>
+<span class=""><img class="user-big" @if ($me=='Brandon') src="{{asset('img/gifbrandon.gif')}}" @else src="{{asset('img/gifperfil.gif')}}" @endif></span>
 <h3>{{Auth::user()->name}}</h3>
 <a class="link-portafolio wow fadeInLeft" href="/portafolio/{{$me}}">PORTAFOLIO</a>
   <div class="user-hobbies">

@@ -46,6 +46,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/start', 'StartController@start')->name('start');
 Route::get('/steps', 'StepsController@steps')->name('steps');
 Route::any('/user', 'UserController@user')->name('user');
+Route::any('/buscar', 'UserController@buscar')->name('buscar');
 Route::any('/proyect', 'ProyectController@proyect')->name('proyect');
 Route::any('/list', 'ListController@list')->name('list')->middleware('auth');;
 Route::any('/message', 'MessageController@message')->name('message');
@@ -63,6 +64,8 @@ Route::any('/newproyect', 'ProyectController@new')->name('newproyect');
 Route::any('/proyectsingle/{nombreP}', 'ProyectController@single')->name('proyectosingle');
 Route::any('/updatem', 'MessageController@update')->name('updatem');
 Route::any('/loading', 'ListController@loading')->name('loading');
+Route::get('/screen', 'HomeController@screen')->name('sreen');
+
 
 Route::any('/teamselect', function () {
     $users = $_POST['users'];

@@ -8,9 +8,9 @@
 
         <input type="text" required name="proyectName" placeholder="Nombre">
         <input type="text" required name="proyectDescription" placeholder="Descripción">
-        <input type="text" required name="proyectSpects" placeholder="Especificaciones">
+        <input type="text" required name="proyectSpects" placeholder="Detalles y especificaciones">
         <input type="number" max="7" min="2" required name="proyectMembers" placeholder="Numero de integrantes">
-        <input type="text" required name="proyectTags" placeholder="Tags">
+        <input type="text" required name="proyectTags" placeholder="Hashtags">
       
         <a href="/home" class="link">Cancelar</a><button type="submit">Listo</button>
       {!! Form::close() !!}

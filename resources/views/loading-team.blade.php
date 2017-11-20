@@ -12,7 +12,7 @@
 
 
 <div class="global-container-r start-logo">
-<img src="{{asset('img/loading_equipo2.gif')}}" class="center" style="width: 150px; padding: 0;">
+<img src="{{asset('img/loading_equipo2.gif')}}" class="center" style="width: 200px; padding: 0;">
 </div>
 
 
