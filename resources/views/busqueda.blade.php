@@ -20,7 +20,7 @@
 
     <li class="wow fadeInLeft">
       <div class="left">
-        <img src="{{asset('img/icons/nav/usuario.svg')}}">
+        <img src="{{asset('img/icons/nav/bimbo.png')}}">
       </div>
       <div class="right">
         <h3><a href="proyectsingle">BIMBO</a><h3>
@@ -30,7 +30,7 @@
 
     <li class="wow fadeInLeft">
       <div class="left">
-        <img src="{{asset('img/icons/nav/ibe.jpg')}}">
+        <img src="{{asset('img/icons/nav/ibero.png')}}">
       </div>
       <div class="right">
         <h3><a href="proyectsingle">Ibero Puebla</a><h3>
@@ -46,7 +46,7 @@
   <ul class="proyect-list m-bottom">
     <li class="wow fadeInLeft">
       <div class="left">
-        <img src="{{asset('img/icons/nav/usuario.svg')}}">
+        <img src="{{asset('img/icons/nav/africam.png')}}">
       </div>
       <div class="right">
         <h3><a href="proyectsingle">AFRICAM SAFARI</a><h3>
@@ -56,7 +56,7 @@
 
     <li class="wow fadeInLeft">
       <div class="left">
-        <img src="{{asset('img/icons/nav/usuario.svg')}}">
+        <img src="{{asset('img/icons/nav/audi.png')}}">
       </div>
       <div class="right">
         <h3><a href="proyectsingle">AUDI</a><h3>

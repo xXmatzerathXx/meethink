@@ -11,7 +11,7 @@
 
 <div class="content-app">
 <div class="user">
-<span><img class="user-big" @if ($user=='Brandon') src="{{asset('img/gifbrandon.gif')}}" @else src="{{asset('img/gifperfil.gif')}}" @endif></span>
+<span><img class="user-big" @if ($user=='Brandon') src="{{asset('img/graficavirtudesv2.png')}}" @else src="{{asset('img/graficavirtudesusuario.png')}}" @endif></span>
 <h3>{{$user}}</h3>
 <a class="link-portafolio wow fadeInLeft" href="/portafolio/{{$user}}">PORTAFOLIO</a>
   <div class="user-hobbies">

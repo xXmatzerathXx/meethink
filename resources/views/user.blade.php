@@ -10,7 +10,7 @@
 @endif
 
 <div class="user">
-<span class=""><img class="user-big" @if ($me=='Brandon') src="{{asset('img/gifbrandon.gif')}}" @else src="{{asset('img/gifperfil.gif')}}" @endif></span>
+<span class=""><img class="user-big" @if ($me=='Brandon') src="{{asset('img/graficavirtudesv2.png')}}" @else src="{{asset('img/graficavirtudesusuario.png')}}" @endif></span>
 <h3>{{Auth::user()->name}}</h3>
 <a class="link-portafolio wow fadeInLeft" href="/portafolio/{{$me}}">PORTAFOLIO</a>
   <div class="user-hobbies">

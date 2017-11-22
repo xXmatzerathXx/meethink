@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="pantalla-cell">
-  <a class="lanotificacion" href="/proyect"><img src="/img/celular.svg"></a>
+  <a class="lanotificacion" href="/proyect"><img src="/img/celular.png"></a>
   <img style="width:100%" src="/img/ss.png">
   <a class="icono-app" href="/proyect"></a>
 </div>

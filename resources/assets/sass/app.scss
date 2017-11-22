@@ -78,7 +78,16 @@ body{
   margin: 0;
   a{
     width: 25%;
-    text-align: center;    
+    text-align: center; 
+    &:nth-child(2){
+      li{
+        padding: 6px;
+        img{
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }   
     &.active{
       border-bottom: 3px solid white;
       li{
@@ -89,6 +98,7 @@ body{
       }
     }
     li{
+    
       padding: 15px;
       opacity: 0.3;
       img{
@@ -373,7 +383,7 @@ form.form-info{
   position: fixed;
   cursor: pointer;  
   bottom: 30px;
-  right: 2.5%;
+  right: 30px;
   box-shadow: 0px 6px 20px 2px rgba(0, 0, 0, 0.85);
   border-radius: 35px;
   z-index: 10;  
@@ -382,8 +392,8 @@ form.form-info{
     border: none;
     cursor: pointer;
     position: relative;    
-    height: 75px;
-    width: 75px;
+    height: 65px;
+    width: 65px;
     display: block;
     background-image: url("/img/icons/nav/proyecto2.svg");
     background-position: center;
@@ -930,8 +940,8 @@ h2.titulos{
         font-family: gb;
         text-align: center;
         img{
-          width: 75px;
-          height: 75px;
+          width: 60px;
+          height: 60px;
           box-shadow: 0px 6px 20px 2px rgba(0, 0, 0, 0.85);
           border-radius: 50%;
         }
@@ -963,21 +973,22 @@ h2.titulos{
      top: 0;
     }
     .icono-app{
-      background-image: url(/img/iconocelularnotificacion.svg);
+      background-image: url(/img/iconocelularnotificacion.png);
       background-size: 56px;
     }
   }
   position: relative;
   img{
     position: relative;
+    width: 100%;
   }
   .icono-app{
     width: 60px;
-    background-position: bottom;
-    height: 60px;
-    background-image: url(/img/iconocelular.svg);
+    background-position: left center;
+    height: 65px;
+    background-image: url(/img/iconocelular.png);
     background-repeat: no-repeat;
-    background-size: 50px;
+    background-size: 56px;
     display: inline-block;
     position: absolute;
     z-index: 10;

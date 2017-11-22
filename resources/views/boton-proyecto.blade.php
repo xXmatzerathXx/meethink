@@ -11,9 +11,9 @@
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-body">
-          <a href="/newproyect"><img src="img/icons/nav/crearproyecto.svg">Crear proyecto</a>
-          <a href="/proyect"><img src="img/icons/nav/finalizarproyecto.svg">Terminar proyecto</a>
-          <a href="/buscar"><img src="img/icons/nav/buscarproyecto.svg">Buscar proyecto</a>
+          <a href="/newproyect"><img src="/img/icons/nav/crearproyecto.svg">Crear proyecto</a>
+          <a href="/proyect"><img src="/img/icons/nav/finalizarproyecto.svg">Terminar proyecto</a>
+          <a href="/buscar"><img src="/img/icons/nav/buscarproyecto.svg">Buscar proyecto</a>
         </div>
       </div>
       
