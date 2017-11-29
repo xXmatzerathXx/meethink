@@ -19,7 +19,10 @@
   display: inline-block;
 
 }
-
+.center{
+  text-align: center;
+  margin-bottom: 25px;
+}
 .link-portafolio {
   @include link();
   margin: 15px auto;
@@ -79,7 +82,7 @@ body{
   a{
     width: 25%;
     text-align: center; 
-    &:nth-child(2){
+    &:nth-of-type(2){
       li{
         padding: 6px;
         img{
@@ -92,9 +95,7 @@ body{
       border-bottom: 3px solid white;
       li{
         opacity: 1;
-        img{
-          
-        }
+
       }
     }
     li{
@@ -615,6 +616,7 @@ form.form-info{
   }
   p{
     display: inline-block;
+    margin-bottom: 0;
     margin-left: 5px;
   }
   .accept{

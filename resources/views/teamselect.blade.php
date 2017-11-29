@@ -7,7 +7,9 @@ $me = Auth::user()->name;
 <style>
   @while ($flag < $miembros + 1)
     .member:nth-of-type({{$flag}}){
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   @php($flag = $flag + 1)
   @endwhile
@@ -17,10 +19,16 @@ $me = Auth::user()->name;
 @include ('nav-complete')
 {!! Form::open(['url' => "proyectsingle/$nombreP", 'class' => 'proyectosingle']) !!}
     <input name="member[]" type="hidden" value="{{$me}}">
-    <h3>TU EQUIPO IDEAL</h3>
+    <h3 class="center">TU EQUIPO IDEAL</h3>
     @foreach ($users as $user)
       @if ($user != $me)
-      <div class="member"><img src="{{asset('img/icons/nav/usuario.svg')}}"><p>{{$user}}<input class="accept" name="member[]" type="checkbox" value="{{$user}}"><span class="delete"></span></div>
+      <div class="member">
+        <img src="{{asset('img/icons/nav/usuario.svg')}}">
+        <p>{{$user}}</p>
+        <div class="f-right">
+          <input class="accept" name="member[]" type="checkbox" value="{{$user}}"><span class="delete"></span>
+        </div>
+       </div>
       @endif
     @endforeach
     <button type="submit">Siguiente</button>
